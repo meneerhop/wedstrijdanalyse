@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
 <meta charset="utf-8">
@@ -289,6 +289,17 @@ body{padding:8px}
 
 .ig-initials{width:110px;height:110px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:2rem;letter-spacing:-.02em;color:#fff;background:linear-gradient(160deg,#ef5a50,#a92a2a);border:3px solid #fff;box-shadow:0 0 0 4px rgba(214,52,44,.5),0 12px 26px rgba(30,45,100,.25)}
 @media (max-width:640px){.ig-initials{width:80px;height:80px;font-size:1.5rem}}
+
+<style>
+.ig-uitklap>summary{display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;list-style:none;padding:13px 28px;border-radius:999px;background:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.95);box-shadow:inset 0 1px 0 #fff,0 8px 20px -10px rgba(30,45,100,.35);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:#2a54c2;font-weight:600;font-size:.95rem;letter-spacing:-.01em;text-align:center;margin:0 auto;user-select:none;width:fit-content;transition:transform .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.ig-uitklap>summary::-webkit-details-marker{display:none}
+.ig-uitklap>summary::marker{display:none}
+.ig-uitklap>summary:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 #fff,0 12px 26px -10px rgba(30,45,100,.45)}
+.ig-uitklap>summary:active{transform:scale(.97)}
+.ig-uitklap-chevron{display:inline-block;transition:transform .3s;opacity:.65;font-style:normal}
+.ig-uitklap[open]>summary .ig-uitklap-chevron{transform:rotate(180deg)}
+.ig-uitklap-inner{display:flex;flex-direction:column;gap:40px;margin-top:16px}
+</style>
 </style>
 
 <div class='ig'>
@@ -324,6 +335,22 @@ body{padding:8px}
 </div>
 </section>
 
+
+<section id='gameplan'>
+<p class='ig-kicker'>Zo pakken we ze</p>
+<h2>Gameplan</h2>
+<div class='ig-plan'>
+<div class='ig-step'><h3>Knal erin</h3><p>Wasmeer komt vaak vroeg achter. Zet de eerste vijftien minuten hoog druk.</p></div>
+<div class='ig-step'><h3>Knip de lijn door</h3><p>Een vaste man op Laurens, een verdediger voor Victor. Die twee maken het grootste deel van hun goals.</p></div>
+<div class='ig-step'><h3>Scherp na rust</h3><p>Tussen minuut 46 en 75 zijn ze het gevaarlijkst. Een voorsprong is tegen hen nooit veilig.</p></div>
+<div class='ig-step'><h3>Beslis het in het slot</h3><p>Ze lekken na minuut 75. Verdeel je krachten en houd frisse benen achter de hand.</p></div>
+<div class='ig-step'><h3>Hoofd koel</h3><p>Wasmeer raakt geïrriteerd door de scheids. Blijf zelf rustig en speel er gebruik van.</p></div>
+</div>
+</section>
+
+<details class='ig-uitklap'>
+<summary>Volledige analyse <i class='ig-uitklap-chevron'>▾</i></summary>
+<div class='ig-uitklap-inner'>
 <section id='vergelijking' class='ig-card'>
 <p class='ig-kicker'>Onderling vergeleken</p>
 <h2>Wasmeer 2 tegen Nieuwland 3</h2>
@@ -383,18 +410,6 @@ body{padding:8px}
 </div>
 </section>
 
-<section id='gameplan'>
-<p class='ig-kicker'>Zo pakken we ze</p>
-<h2>Gameplan</h2>
-<div class='ig-plan'>
-<div class='ig-step'><h3>Knal erin</h3><p>Wasmeer komt vaak vroeg achter. Zet de eerste vijftien minuten hoog druk.</p></div>
-<div class='ig-step'><h3>Knip de lijn door</h3><p>Een vaste man op Laurens, een verdediger voor Victor. Die twee maken het grootste deel van hun goals.</p></div>
-<div class='ig-step'><h3>Scherp na rust</h3><p>Tussen minuut 46 en 75 zijn ze het gevaarlijkst. Een voorsprong is tegen hen nooit veilig.</p></div>
-<div class='ig-step'><h3>Beslis het in het slot</h3><p>Ze lekken na minuut 75. Verdeel je krachten en houd frisse benen achter de hand.</p></div>
-<div class='ig-step'><h3>Hoofd koel</h3><p>Wasmeer raakt geïrriteerd door de scheids. Blijf zelf rustig en speel er gebruik van.</p></div>
-</div>
-</section>
-
 <section id='stand'>
 <p class='ig-kicker'>De ranglijst</p>
 <h2>Stand 5e klasse 10</h2>
@@ -414,7 +429,8 @@ body{padding:8px}
 <details class='ig-card' id='over'><summary>Over deze analyse</summary>
 <p data-read lang='nl'>Alle cijfers komen uit screenshots en Instagram-posts: het programma, de stand, de spelerslijst en de Match Result-, Starting XI-posts en captions van wasmeer_zaterdag_2. Statistieken in cijfers, vergelijking, goalmomenten en spelerstabel gaan alleen over de competitie. De tijdlijn en het seizoensoverzicht tellen de beker mee. Een eigen doelpunt van NVC telt als Wasmeer-goal zonder maker. Van de bekerpoule zijn geen opstellingen bekend. Van Nieuwland zijn alleen de uitslagen bekend. De voorspelling en kansen zijn een inschatting.</p>
 </details>
-
+</div>
+</details>
 </div>
 
 <script>
