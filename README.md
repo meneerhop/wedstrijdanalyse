@@ -33,3 +33,4 @@ Let op: een GitHub Pages-site is openbaar. Iedereen met de link kan hem bekijken
 5. Upload de gewijzigde bestanden opnieuw naar GitHub.
 
 Na een gespeelde wedstrijd zet je `status: 'gespeeld'` met `uitslag` (Nieuwland eerst) en `resultaat` (`'W'`, `'G'` of `'V'`).
+
