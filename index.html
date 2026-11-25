@@ -3,564 +3,200 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wedstrijdanalyse Wasmeer 2 – ASC Nieuwland 3</title>
-<link rel="icon" href="assets/nieuwland-logo.png">
-<style>:root{--color-fg:#161a26;--color-fg-muted:rgba(28,34,56,.62);--color-bg:#ffffff;--color-panel:#ffffff;--color-border-line:rgba(20,30,70,.12);--color-ok:#2e9e5b;--color-warn:#d39b1f;--color-bad:#c93b3b;--cds-font-size-caption:.8rem;--cds-font-size-body:.95rem;--cds-font-size-heading:1.25rem;--cds-font-weight-medium:600;--cds-pad-lg:20px;--cds-pad-md:14px;--cds-gap-md:14px;--cds-gap-xl:32px;--cds-radius:12px;--cds-chart-grid:rgba(20,30,70,.1);--cds-text-secondary:rgba(28,34,56,.62);--cds-surface-popover:#fff;--cds-border:rgba(20,30,70,.12);--cds-shadow-popover:0 8px 24px rgba(0,0,0,.15);--font-anthropic-sans:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;--font-anthropic-serif:Georgia,serif}
-html,body{margin:0;background:#eef1f8;color:#161a26;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',Arial,sans-serif}
-body{padding:16px}.ig{margin:0 auto}
-.ig-footer{max-width:1120px;margin:16px auto 0;text-align:center;font-size:.8rem;color:rgba(28,34,56,.55)}</style>
-<script src="assets/d3.min.js"></script>
-<script>
-window.DASH_DATA={"wasmeer_wedstrijden": [{"id": "V1", "datum": "2026-08-29", "ronde": "Beker poule", "competitie": "Beker", "locatie": "Thuis", "tegenstander": "Victoria", "voor": "4", "tegen": "0", "instagram": "Eerste bekerduel van het seizoen. Laurens maakte een hattrick."}, {"id": "H1", "datum": "2026-09-05", "ronde": "Beker poule", "competitie": "Beker", "locatie": "Uit", "tegenstander": "Hercules", "voor": "5", "tegen": "4", "instagram": "Bekerduel bij Hercules: van achterstand naar winst. Laurens 2x, Markwin met de gelijkmaker, Dennis R 2x in het slot."}, {"id": "E1", "datum": "2026-09-12", "ronde": "Beker poule", "competitie": "Beker", "locatie": "Uit", "tegenstander": "EDO", "voor": "7", "tegen": "0", "instagram": "Om 09:45 bij EDO met maar 1,5 wissel. Sterk combinatiespel en een volley van Mick in de kruising."}, {"id": "W1", "datum": "2026-09-19", "ronde": "2e ronde", "competitie": "Competitie", "locatie": "Thuis", "tegenstander": "Huizen 3", "voor": "4", "tegen": "1", "instagram": "Eerste competitieduel, thuis op Anna's Hoeve. Wasmeer stond 4 duels op 12 punten (incl. beker) en was zelfverzekerd: 'Same team. Same mentality.'"}, {"id": "W2", "datum": "2026-10-10", "ronde": "3e ronde", "competitie": "Competitie", "locatie": "Uit", "tegenstander": "NVC 2", "voor": "3", "tegen": "4", "instagram": "Laurens en Victor op vakantie. Thomas aanvoerder, Collin in de voorhoede, op kunstgras. Gelijk opgaand duel in de regen, NVC won het in de slotminuten."}, {"id": "W3", "datum": "2026-10-20", "ronde": "6e ronde", "competitie": "Competitie", "locatie": "Thuis", "tegenstander": "Loosdrecht 4", "voor": "7", "tegen": "1", "instagram": "Dinsdagavond in de stromende regen op veld 4, het veld van zaterdag. Laurens en Victor terug van vakantie: allebei een hattrick. Bas S met een solo over rechts."}, {"id": "W4", "datum": "2026-10-27", "ronde": "4e ronde", "competitie": "Competitie", "locatie": "Thuis", "tegenstander": "Altius 3", "voor": "2", "tegen": "2", "instagram": "Dinsdagavond thuis op veld 1. Harde duels en veel strijd in de slotminuten, maar maar 1 punt."}, {"id": "W5", "datum": "2026-10-31", "ronde": "5e ronde", "competitie": "Competitie", "locatie": "Uit", "tegenstander": "Forza Almere 2", "voor": "1", "tegen": "2", "instagram": "Mistig en koud. Wasmeer begon met een fitte bank, maar verloor."}, {"id": "W6", "datum": "2026-11-07", "ronde": "8e ronde", "competitie": "Competitie", "locatie": "Uit", "tegenstander": "Sporting Almere 3", "voor": "5", "tegen": "5", "instagram": "Na een 5-2 voorsprong viel de gelijkmaker diep in de blessuretijd. Wasmeer was boos op de scheidsrechter."}, {"id": "B2", "datum": "2026-11-14", "ronde": "Beker 2e ronde", "competitie": "Beker", "locatie": "Uit", "tegenstander": "Eemboys", "voor": "1", "tegen": "3", "instagram": "Bekeruitschakeling bij Eemboys, met veel eigen supporters langs de lijn. Victor deed nog wat terug, maar het was te weinig."}, {"id": "W7", "datum": "2026-11-21", "ronde": "10e ronde", "competitie": "Competitie", "locatie": "Uit", "tegenstander": "Spakenburg 4", "voor": "1", "tegen": "1", "instagram": "Al om 11:00 bij koploper Spakenburg. Wasmeer vocht hard in de laatste 20 minuten."}], "nieuwland_wedstrijden": [{"id": "N1", "datum": "2026-09-26", "ronde": "1e ronde", "competitie": "Competitie", "locatie": "Uit", "tegenstander": "AH'78 2", "voor": "0", "tegen": "4"}, {"id": "N2", "datum": "2026-10-10", "ronde": "3e ronde", "competitie": "Competitie", "locatie": "Uit", "tegenstander": "Laren 99 sv 3", "voor": "1", "tegen": "3"}, {"id": "N3", "datum": "2026-10-24", "ronde": "6e ronde", "competitie": "Competitie", "locatie": "Thuis", "tegenstander": "Altius 3", "voor": "6", "tegen": "0"}, {"id": "N4", "datum": "2026-10-31", "ronde": "5e ronde", "competitie": "Competitie", "locatie": "Uit", "tegenstander": "NVC 2", "voor": "2", "tegen": "0"}, {"id": "N5", "datum": "2026-11-07", "ronde": "8e ronde", "competitie": "Competitie", "locatie": "Thuis", "tegenstander": "Loosdrecht 4", "voor": "4", "tegen": "1"}], "wasmeer_doelpunten": [{"wedstrijd": "W1", "minuut": "10", "minuut_label": "10'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W1", "minuut": "54", "minuut_label": "54'", "team": "Wasmeer", "speler": "Bob", "assist": ""}, {"wedstrijd": "W1", "minuut": "65", "minuut_label": "65'", "team": "Wasmeer", "speler": "Laurens", "assist": "Dennis R"}, {"wedstrijd": "W1", "minuut": "71", "minuut_label": "71'", "team": "Wasmeer", "speler": "Laurens", "assist": "Jordy"}, {"wedstrijd": "W1", "minuut": "83", "minuut_label": "83'", "team": "Wasmeer", "speler": "Jordy", "assist": "Dennis R"}, {"wedstrijd": "W2", "minuut": "15", "minuut_label": "15'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W2", "minuut": "20", "minuut_label": "20'", "team": "Wasmeer", "speler": "Markwin", "assist": "Collin"}, {"wedstrijd": "W2", "minuut": "35", "minuut_label": "35'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W2", "minuut": "60", "minuut_label": "60'", "team": "Wasmeer", "speler": "Markwin", "assist": "Jordy"}, {"wedstrijd": "W2", "minuut": "65", "minuut_label": "65'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W2", "minuut": "70", "minuut_label": "70'", "team": "Wasmeer", "speler": "Eigen doelpunt NVC", "assist": ""}, {"wedstrijd": "W2", "minuut": "80", "minuut_label": "80'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W3", "minuut": "25", "minuut_label": "25'", "team": "Wasmeer", "speler": "Victor", "assist": "Laurens"}, {"wedstrijd": "W3", "minuut": "30", "minuut_label": "30'", "team": "Wasmeer", "speler": "Laurens", "assist": "Robin"}, {"wedstrijd": "W3", "minuut": "35", "minuut_label": "35'", "team": "Wasmeer", "speler": "Victor", "assist": "Bas S"}, {"wedstrijd": "W3", "minuut": "50", "minuut_label": "50'", "team": "Wasmeer", "speler": "Laurens", "assist": "Quentin"}, {"wedstrijd": "W3", "minuut": "55", "minuut_label": "55'", "team": "Wasmeer", "speler": "Laurens", "assist": "Victor"}, {"wedstrijd": "W3", "minuut": "65", "minuut_label": "65'", "team": "Wasmeer", "speler": "Victor", "assist": "Laurens"}, {"wedstrijd": "W3", "minuut": "80", "minuut_label": "80'", "team": "Wasmeer", "speler": "Mick", "assist": "Victor"}, {"wedstrijd": "W3", "minuut": "90", "minuut_label": "90'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W4", "minuut": "7", "minuut_label": "7'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W4", "minuut": "15", "minuut_label": "15'", "team": "Wasmeer", "speler": "Victor", "assist": "Laurens"}, {"wedstrijd": "W4", "minuut": "35", "minuut_label": "35'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W4", "minuut": "65", "minuut_label": "65'", "team": "Wasmeer", "speler": "Jordy", "assist": "Laurens"}, {"wedstrijd": "W5", "minuut": "25", "minuut_label": "25'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W5", "minuut": "60", "minuut_label": "60'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W5", "minuut": "85", "minuut_label": "85'", "team": "Wasmeer", "speler": "Laurens", "assist": "Bas V"}, {"wedstrijd": "W6", "minuut": "10", "minuut_label": "10'", "team": "Wasmeer", "speler": "Robin", "assist": "Victor"}, {"wedstrijd": "W6", "minuut": "12", "minuut_label": "12'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W6", "minuut": "30", "minuut_label": "30'", "team": "Wasmeer", "speler": "Laurens", "assist": ""}, {"wedstrijd": "W6", "minuut": "40", "minuut_label": "40'", "team": "Wasmeer", "speler": "Bas V", "assist": ""}, {"wedstrijd": "W6", "minuut": "50", "minuut_label": "50'", "team": "Wasmeer", "speler": "Victor", "assist": "Laurens"}, {"wedstrijd": "W6", "minuut": "55", "minuut_label": "55'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W6", "minuut": "65", "minuut_label": "65'", "team": "Wasmeer", "speler": "Victor", "assist": "Collin"}, {"wedstrijd": "W6", "minuut": "75", "minuut_label": "75'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W6", "minuut": "90", "minuut_label": "90'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W6", "minuut": "91", "minuut_label": "90+'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W7", "minuut": "35", "minuut_label": "35'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "W7", "minuut": "50", "minuut_label": "50'", "team": "Wasmeer", "speler": "Victor", "assist": "Laurens"}, {"wedstrijd": "B2", "minuut": "10", "minuut_label": "10'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "B2", "minuut": "55", "minuut_label": "55'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "B2", "minuut": "65", "minuut_label": "65'", "team": "Wasmeer", "speler": "Victor", "assist": "Thomas"}, {"wedstrijd": "B2", "minuut": "85", "minuut_label": "85'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "V1", "minuut": "15", "minuut_label": "15'", "team": "Wasmeer", "speler": "Laurens", "assist": ""}, {"wedstrijd": "V1", "minuut": "25", "minuut_label": "25'", "team": "Wasmeer", "speler": "Laurens", "assist": ""}, {"wedstrijd": "V1", "minuut": "55", "minuut_label": "55'", "team": "Wasmeer", "speler": "Laurens", "assist": ""}, {"wedstrijd": "V1", "minuut": "70", "minuut_label": "70'", "team": "Wasmeer", "speler": "Koray", "assist": "Rick"}, {"wedstrijd": "H1", "minuut": "20", "minuut_label": "20'", "team": "Wasmeer", "speler": "Laurens", "assist": "Koray"}, {"wedstrijd": "H1", "minuut": "25", "minuut_label": "25'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "H1", "minuut": "30", "minuut_label": "30'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "H1", "minuut": "50", "minuut_label": "50'", "team": "Wasmeer", "speler": "Markwin", "assist": ""}, {"wedstrijd": "H1", "minuut": "55", "minuut_label": "55'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "H1", "minuut": "60", "minuut_label": "60'", "team": "Wasmeer", "speler": "Laurens", "assist": ""}, {"wedstrijd": "H1", "minuut": "70", "minuut_label": "70'", "team": "Wasmeer", "speler": "Dennis R", "assist": "Victor"}, {"wedstrijd": "H1", "minuut": "75", "minuut_label": "75'", "team": "Wasmeer", "speler": "Dennis R", "assist": ""}, {"wedstrijd": "H1", "minuut": "85", "minuut_label": "85'", "team": "Tegenstander", "speler": "", "assist": ""}, {"wedstrijd": "E1", "minuut": "11", "minuut_label": "11'", "team": "Wasmeer", "speler": "Dennis R", "assist": "Bas V"}, {"wedstrijd": "E1", "minuut": "37", "minuut_label": "37'", "team": "Wasmeer", "speler": "Victor", "assist": "Markwin"}, {"wedstrijd": "E1", "minuut": "41", "minuut_label": "41'", "team": "Wasmeer", "speler": "Markwin", "assist": "Victor"}, {"wedstrijd": "E1", "minuut": "49", "minuut_label": "49'", "team": "Wasmeer", "speler": "Joppe", "assist": "Victor"}, {"wedstrijd": "E1", "minuut": "68", "minuut_label": "68'", "team": "Wasmeer", "speler": "Mick", "assist": ""}, {"wedstrijd": "E1", "minuut": "87", "minuut_label": "87'", "team": "Wasmeer", "speler": "Laurens", "assist": ""}, {"wedstrijd": "E1", "minuut": "89", "minuut_label": "89'", "team": "Wasmeer", "speler": "Laurens", "assist": "Joppe"}], "wasmeer_opstellingen": [{"wedstrijd": "W1", "nummer": "45", "speler": "Jesse", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "2", "speler": "Luc", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "3", "speler": "Rick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "4", "speler": "Bob", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "5", "speler": "Laurens", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "W1", "nummer": "8", "speler": "Thomas", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "9", "speler": "Dennis R", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "12", "speler": "Collin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "13", "speler": "Coen", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "33", "speler": "Robin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "38", "speler": "Markwin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "6", "speler": "Bas S", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "15", "speler": "Bas V", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W1", "nummer": "22", "speler": "Jordy", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "45", "speler": "Jesse", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "2", "speler": "Luc", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "3", "speler": "Rick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "6", "speler": "Bas S", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "8", "speler": "Thomas", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "W2", "nummer": "10", "speler": "Koray", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "12", "speler": "Collin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "17", "speler": "Finn", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "24", "speler": "Quentin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "33", "speler": "Robin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "38", "speler": "Markwin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "4", "speler": "Bob", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "13", "speler": "Coen", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "14", "speler": "Mick", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W2", "nummer": "22", "speler": "Jordy", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "1", "speler": "Joppe", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "2", "speler": "Luc", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "3", "speler": "Rick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "5", "speler": "Laurens", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "W3", "nummer": "6", "speler": "Bas S", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "9", "speler": "Dennis R", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "13", "speler": "Coen", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "14", "speler": "Mick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "15", "speler": "Bas V", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "22", "speler": "Jordy", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "33", "speler": "Robin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "7", "speler": "Victor", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "8", "speler": "Thomas", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "17", "speler": "Finn", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W3", "nummer": "24", "speler": "Quentin", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "1", "speler": "Joppe", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "2", "speler": "Luc", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "3", "speler": "Rick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "5", "speler": "Laurens", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "W4", "nummer": "6", "speler": "Bas S", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "7", "speler": "Victor", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "8", "speler": "Thomas", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "9", "speler": "Dennis R", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "15", "speler": "Bas V", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "17", "speler": "Finn", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "33", "speler": "Robin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "4", "speler": "Bob", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "14", "speler": "Mick", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "22", "speler": "Jordy", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "24", "speler": "Quentin", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W4", "nummer": "25", "speler": "Dennis L", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "45", "speler": "Jesse", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "2", "speler": "Luc", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "3", "speler": "Rick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "4", "speler": "Bob", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "7", "speler": "Victor", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "8", "speler": "Thomas", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "W5", "nummer": "9", "speler": "Dennis R", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "14", "speler": "Mick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "15", "speler": "Bas V", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "22", "speler": "Jordy", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "33", "speler": "Robin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "5", "speler": "Laurens", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "6", "speler": "Bas S", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "12", "speler": "Collin", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W5", "nummer": "24", "speler": "Quentin", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "1", "speler": "Joppe", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "2", "speler": "Luc", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "3", "speler": "Rick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "4", "speler": "Bob", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "7", "speler": "Victor", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "9", "speler": "Dennis R", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "W6", "nummer": "12", "speler": "Collin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "15", "speler": "Bas V", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "17", "speler": "Finn", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "24", "speler": "Quentin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "33", "speler": "Robin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "5", "speler": "Laurens", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "13", "speler": "Coen", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W6", "nummer": "25", "speler": "Dennis L", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "45", "speler": "Jesse", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "2", "speler": "Luc", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "4", "speler": "Bob", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "5", "speler": "Laurens", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "W7", "nummer": "7", "speler": "Victor", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "8", "speler": "Thomas", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "9", "speler": "Dennis R", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "14", "speler": "Mick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "15", "speler": "Bas V", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "33", "speler": "Robin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "38", "speler": "Markwin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "12", "speler": "Collin", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "13", "speler": "Coen", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "W7", "nummer": "24", "speler": "Quentin", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "45", "speler": "Jesse", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "4", "speler": "Bob", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "5", "speler": "Laurens", "rol": "Basis", "aanvoerder": "ja"}, {"wedstrijd": "B2", "nummer": "6", "speler": "Bas S", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "7", "speler": "Victor", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "8", "speler": "Thomas", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "12", "speler": "Collin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "13", "speler": "Coen", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "14", "speler": "Mick", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "25", "speler": "Dennis L", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "38", "speler": "Markwin", "rol": "Basis", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "1", "speler": "Joppe", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "9", "speler": "Dennis R", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "15", "speler": "Bas V", "rol": "Invaller", "aanvoerder": ""}, {"wedstrijd": "B2", "nummer": "33", "speler": "Robin", "rol": "Invaller", "aanvoerder": ""}], "wasmeer_selectie": [{"speler": "Robin", "naam": "Robin Ansems"}, {"speler": "Collin", "naam": "Collin Brouwers"}, {"speler": "Rick", "naam": "Rick Duurland"}, {"speler": "Thomas", "naam": "Thomas Budding"}, {"speler": "Mick", "naam": "Mick Kroneberg"}, {"speler": "Victor", "naam": "Victor van Loenen"}, {"speler": "Laurens", "naam": "Laurens de Paauw"}, {"speler": "Dennis L", "naam": "Dennis Los"}, {"speler": "Jordy", "naam": "Jordy Poot"}, {"speler": "Bob", "naam": "Bob van Rijk"}, {"speler": "Dennis R", "naam": "Dennis Rood"}, {"speler": "Finn", "naam": "Finn van Raaij"}, {"speler": "Koray", "naam": "Koray Sarihan"}, {"speler": "Quentin", "naam": "Quentin van Reenen"}, {"speler": "Joppe", "naam": "Joppe Vinken"}, {"speler": "Bas V", "naam": "Bas Verkerk"}, {"speler": "Luc", "naam": "Luc Verwoord"}, {"speler": "Bas S", "naam": "Bas Schouten"}, {"speler": "Jesse", "naam": "Jesse van Zon"}, {"speler": "Markwin", "naam": "Markwin Petrus"}, {"speler": "Coen", "naam": "Coen"}], "stand": [{"positie": "1", "team": "AH'78 2", "g": "7", "w": "6", "gl": "0", "v": "1", "p": "18", "voor": "27", "tegen": "9"}, {"positie": "2", "team": "Sporting Almere 3", "g": "7", "w": "5", "gl": "2", "v": "0", "p": "17", "voor": "33", "tegen": "17"}, {"positie": "3", "team": "Spakenburg 4", "g": "7", "w": "5", "gl": "2", "v": "0", "p": "17", "voor": "29", "tegen": "15"}, {"positie": "4", "team": "Sporting Almere 4", "g": "8", "w": "5", "gl": "0", "v": "3", "p": "15", "voor": "32", "tegen": "25"}, {"positie": "5", "team": "Forza Almere 2", "g": "6", "w": "4", "gl": "0", "v": "2", "p": "12", "voor": "23", "tegen": "16"}, {"positie": "6", "team": "Huizen 3", "g": "7", "w": "4", "gl": "0", "v": "3", "p": "12", "voor": "23", "tegen": "25"}, {"positie": "7", "team": "Nieuwland ASC 3", "g": "5", "w": "3", "gl": "0", "v": "2", "p": "9", "voor": "13", "tegen": "8"}, {"positie": "8", "team": "Wasmeer 2", "g": "7", "w": "2", "gl": "3", "v": "2", "p": "9", "voor": "23", "tegen": "16"}, {"positie": "9", "team": "Altius 3", "g": "7", "w": "2", "gl": "2", "v": "3", "p": "8", "voor": "16", "tegen": "20"}, {"positie": "10", "team": "Laren 99 sv 3", "g": "7", "w": "2", "gl": "1", "v": "4", "p": "7", "voor": "13", "tegen": "26"}, {"positie": "11", "team": "BVV '31 2", "g": "8", "w": "2", "gl": "1", "v": "5", "p": "7", "voor": "21", "tegen": "22"}, {"positie": "12", "team": "NVC 2", "g": "5", "w": "2", "gl": "0", "v": "3", "p": "6", "voor": "15", "tegen": "12"}, {"positie": "13", "team": "Loosdrecht 4", "g": "9", "w": "0", "gl": "1", "v": "8", "p": "1", "voor": "8", "tegen": "39"}, {"positie": "14", "team": "Victoria 3", "g": "6", "w": "0", "gl": "0", "v": "6", "p": "0", "voor": "16", "tegen": "42"}]};
-window.dash=(function(){var calcs={},draws=[],ons=[],cache={};
-function data(id){if(DASH_DATA[id])return{status:'ok',data:DASH_DATA[id]};var c=calcs[id];if(c){if(!(id in cache)){cache[id]=c.fn.apply(null,c.inputs.map(function(i){return data(i).data;}));}return{status:'ok',data:cache[id]};}return{status:'missing',data:[]};}
-function run(){ons.forEach(function(f){try{f()}catch(e){console.error(e)}});draws.forEach(function(d){document.querySelectorAll('[data-draw="'+d[0]+'"]').forEach(function(el){try{d[1](el)}catch(e){console.error(e)}});});}
-return{data:data,calc:function(id,o){calcs[id]=o;},draw:function(n,fn){draws.push([n,fn]);},onData:function(fn){ons.push(fn);},colors:['#d6342c','#2f5fd0'],params:function(){return{};},setParams:function(){},setLink:function(){},refresh:function(){},run:run};})();
-</script>
+<title>ASC Nieuwland 3 · Tegenstanders</title>
+<link rel="icon" href="assets/logos/nieuwland.png">
+<style>
+:root{--wa:#d6342c;--nl:#2f5fd0;--fg:#161a26;--muted:rgba(28,34,56,.62);--line:rgba(20,30,70,.1)}
+*{box-sizing:border-box}
+html,body{margin:0;background:#eef1f8;color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body{padding:16px}
+.app{max-width:1120px;margin:0 auto;position:relative;isolation:isolate;overflow:hidden;padding:30px 22px 40px;border-radius:34px;display:flex;flex-direction:column;gap:36px;
+background:radial-gradient(50% 38% at 6% 0%,rgba(47,95,208,.24),transparent 70%),radial-gradient(48% 38% at 98% 8%,rgba(214,52,44,.18),transparent 70%),radial-gradient(42% 28% at 18% 55%,rgba(47,95,208,.12),transparent 70%),radial-gradient(46% 30% at 90% 70%,rgba(140,90,220,.10),transparent 70%),linear-gradient(170deg,#fff 0%,#f5f6fb 50%,#eef1f8 100%)}
+.glass{position:relative;background:linear-gradient(150deg,rgba(255,255,255,.82) 0%,rgba(255,255,255,.55) 55%,rgba(255,255,255,.62) 100%);-webkit-backdrop-filter:blur(26px) saturate(180%);backdrop-filter:blur(26px) saturate(180%);border:1px solid rgba(255,255,255,.95);box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(20,30,70,.04),0 1px 2px rgba(20,30,70,.06),0 16px 36px -14px rgba(30,45,100,.28);border-radius:26px}
+h1,h2,h3{margin:0;letter-spacing:-.025em}
+.kicker{margin:0 0 4px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.sub{margin:4px 0 0;color:var(--muted);line-height:1.5}
+
+/* kop */
+.head{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;padding:24px}
+.badge{width:96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 25%,#fff,rgba(255,255,255,.9));border:1px solid rgba(20,30,70,.08);box-shadow:inset 0 -6px 14px rgba(20,30,70,.05),0 14px 30px -10px rgba(30,45,100,.35),0 0 0 6px rgba(255,255,255,.7)}
+.badge img{max-width:72%;max-height:78%}
+.head h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stat{min-width:84px;padding:10px 14px;border-radius:18px;background:rgba(255,255,255,.7);border:1px solid rgba(20,30,70,.08);box-shadow:inset 0 1px 0 #fff;text-align:center}
+.stat b{display:block;font-size:1.5rem;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat span{font-size:.72rem;color:var(--muted)}
+.form{display:flex;gap:5px;margin-top:10px}
+.pip{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 3px 8px rgba(0,0,0,.18)}
+.W{background:linear-gradient(160deg,#4cc47e,#22804a)}.G{background:linear-gradient(160deg,#f0bb45,#b88112)}.V{background:linear-gradient(160deg,#ec5d5d,#a92a2a)}
+
+/* volgende wedstrijd */
+.next{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:26px;text-decoration:none;color:inherit;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.next:hover{transform:translateY(-3px);box-shadow:inset 0 1px 0 #fff,0 26px 50px -18px rgba(30,45,100,.4)}
+.next .wm{position:absolute;right:-50px;top:-30px;width:300px;opacity:.08;transform:rotate(-10deg);pointer-events:none}
+.next .vs{display:flex;align-items:center;gap:16px;margin:14px 0 10px}
+.next .vs .badge{width:78px;height:78px}
+.next .vs i{font-style:normal;font-weight:300;color:var(--muted)}
+.next h2{font-size:clamp(1.4rem,3.5vw,2rem);font-weight:700}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;color:var(--muted)}
+.pred{text-align:center;padding:16px 20px;border-radius:22px;background:rgba(255,255,255,.65);border:1px solid rgba(20,30,70,.08);box-shadow:inset 0 1px 0 #fff;position:relative}
+.pred small{display:block;font-size:.72rem;color:var(--muted)}
+.pred b{display:block;font-size:2.6rem;font-weight:700;letter-spacing:-.04em;line-height:1.1}
+.cta{display:inline-flex;align-items:center;gap:6px;margin-top:16px;padding:10px 18px;border-radius:999px;background:linear-gradient(160deg,#5a86f0,#2a54c2);color:#fff;font-weight:600;font-size:.92rem;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 22px -8px rgba(47,95,208,.7)}
+
+/* tegels */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.chip{border:1px solid rgba(20,30,70,.1);background:rgba(255,255,255,.65);border-radius:999px;padding:7px 14px;font:inherit;font-size:.85rem;color:var(--fg);cursor:pointer;box-shadow:inset 0 1px 0 #fff}
+.chip[aria-pressed=true]{background:linear-gradient(160deg,#5a86f0,#2a54c2);color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(230px,100%),1fr));gap:14px}
+.tile{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:22px 16px 18px;text-decoration:none;color:inherit;transition:transform .25s ease,box-shadow .25s ease}
+a.tile:hover{transform:translateY(-4px);box-shadow:inset 0 1px 0 #fff,0 24px 44px -16px rgba(30,45,100,.38)}
+.tile .badge{width:84px;height:84px}
+.tile .badge img{max-width:66%;max-height:70%}
+.tile h3{font-size:1.08rem;font-weight:700}
+.tile .pos{font-size:.8rem;color:var(--muted)}
+.status{font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1px solid transparent}
+.s-klaar{background:rgba(46,158,91,.12);color:#1f7a45;border-color:rgba(46,158,91,.3)}
+.s-volgt{background:rgba(20,30,70,.05);color:var(--muted);border-color:rgba(20,30,70,.1)}
+.s-gespeeld{background:rgba(47,95,208,.08);color:#2a54c2;border-color:rgba(47,95,208,.25)}
+.tile.dim{opacity:.72}
+.tile .res{font-size:.85rem;font-weight:600}
+.tile .go{font-size:.85rem;font-weight:600;color:#2a54c2}
+.empty{grid-column:1/-1;color:var(--muted);text-align:center;padding:20px}
+
+.foot{text-align:center;font-size:.75rem;color:var(--muted);margin-top:14px}
+
+@media (max-width:640px){
+body{padding:8px}
+.app{padding:18px 12px 28px;border-radius:24px;gap:26px}
+.head{grid-template-columns:auto 1fr;padding:18px;gap:14px}
+.head .badge{width:68px;height:68px}
+.head .stats{grid-column:1/-1}
+.stat{flex:1;min-width:0;padding:8px}
+.stat b{font-size:1.25rem}
+.next{grid-template-columns:1fr;padding:20px}
+.next .vs .badge{width:60px;height:60px}
+.pred{display:flex;align-items:center;justify-content:space-between;text-align:left}
+.pred b{font-size:2rem}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tile{padding:16px 10px 14px;border-radius:20px}
+.tile .badge{width:64px;height:64px}
+.tile h3{font-size:.95rem}
+.status{font-size:.62rem;padding:3px 8px}
+}
+@media (prefers-reduced-motion:reduce){.next,.tile{transition:none}}
+</style>
 </head>
 <body>
-<style>
-.ig{--wa:#d6342c;--nl:#2f5fd0;--wa-soft:color-mix(in srgb,#d6342c 16%,transparent);--nl-soft:color-mix(in srgb,#2f5fd0 16%,transparent);display:flex;flex-direction:column;gap:40px;max-width:1120px}
-.ig h2{font-family:var(--font-anthropic-serif);font-weight:400;font-size:1.7rem;margin:0 0 4px;line-height:1.2}
-.ig-kicker{margin:0 0 4px;font-size:var(--cds-font-size-caption);letter-spacing:.12em;text-transform:uppercase;color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium)}
-.ig-sub{margin:0 0 18px;color:var(--color-fg-muted);max-width:68ch;line-height:1.5}
-.ig-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:14px;padding:var(--cds-pad-lg)}
-.ig-hero{border-radius:18px;overflow:hidden;color:#fff;background:linear-gradient(115deg,#7d1410 0%,#2a0d0c 38%,#0d1633 62%,#1d3c8c 100%);padding:28px 24px}
-.ig-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:var(--cds-font-size-caption);letter-spacing:.06em;text-transform:uppercase;opacity:.85;justify-content:center;text-align:center}
-.ig-vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;margin:22px 0}
-.ig-team{text-align:center}
-.ig-team h3{font-family:var(--font-anthropic-serif);font-weight:400;font-size:clamp(1.4rem,4vw,2.3rem);margin:0;line-height:1.1}
-.ig-team .ig-tag{display:inline-block;margin-top:6px;font-size:var(--cds-font-size-caption);padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.14)}
-.ig-vsmid{font-family:var(--font-anthropic-serif);font-size:clamp(1.6rem,5vw,3rem);opacity:.9}
-.ig-hero .ig-form{justify-content:center;margin-top:10px}
-.ig-form{display:flex;gap:5px;flex-wrap:wrap}
-.ig-pip{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:#fff}
-.ig-pip.r-W{background:#2e9e5b}.ig-pip.r-G{background:#d39b1f}.ig-pip.r-V{background:#c93b3b}
-.ig-predict{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:16px 18px}
-.ig-predict .big{font-family:var(--font-anthropic-serif);font-size:3rem;line-height:1;white-space:nowrap}
-.ig-predict small{display:block;opacity:.8;font-size:var(--cds-font-size-caption);margin-bottom:4px}
-.ig-odds{display:flex;height:30px;border-radius:8px;overflow:hidden;font-size:var(--cds-font-size-caption);font-weight:600}
-.ig-odds div{display:flex;align-items:center;justify-content:center;color:#fff;white-space:nowrap;overflow:hidden}
-.ig-oddslab{display:flex;justify-content:space-between;font-size:var(--cds-font-size-caption);opacity:.8;margin-top:5px}
-.ig-lead{font-size:1.15rem;line-height:1.55;max-width:66ch;margin:0}
-.ig-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px}
-.ig-tile{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:14px;padding:16px;position:relative;overflow:hidden}
-.ig-tile::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--wa)}
-.ig-tile.good::before{background:var(--nl)}
-.ig-tile .n{font-family:var(--font-anthropic-serif);font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums;display:block}
-.ig-tile .n small{font-size:1.1rem;color:var(--color-fg-muted)}
-.ig-tile p{margin:8px 0 0;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.4}
-.ig-tile strong{color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
-.ig-bf{display:flex;flex-direction:column;gap:14px}
-.ig-bfhead{display:grid;grid-template-columns:1fr minmax(120px,190px) 1fr;font-size:var(--cds-font-size-caption);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
-.ig-bfhead span:first-child{text-align:right;color:var(--wa)}.ig-bfhead span:last-child{color:var(--nl)}
-.bf-row{display:grid;grid-template-columns:1fr minmax(120px,190px) 1fr;align-items:center;gap:10px}
-.bf-side{display:flex;align-items:center;gap:8px}
-.bf-side.l{flex-direction:row-reverse}
-.bf-bar{height:16px;border-radius:4px;min-width:3px}
-.bf-side.l .bf-bar{background:var(--wa-soft)}.bf-side.r .bf-bar{background:var(--nl-soft)}
-.bf-side.l.win .bf-bar{background:var(--wa)}.bf-side.r.win .bf-bar{background:var(--nl)}
-.bf-val{font-variant-numeric:tabular-nums;font-weight:600;min-width:32px}
-.bf-side.l .bf-val{text-align:right}
-.bf-label{text-align:center;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);line-height:1.3}
-.ig-tl{list-style:none;margin:0;padding:0;position:relative}
-.ig-tl::before{content:'';position:absolute;left:27px;top:6px;bottom:6px;width:2px;background:var(--color-border-line)}
-.ig-tl li{display:grid;grid-template-columns:56px 1fr;gap:14px;padding:10px 0;position:relative}
-.ig-score{width:56px;height:56px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:700;font-variant-numeric:tabular-nums;position:relative;z-index:1;font-size:1rem;border:3px solid var(--color-bg)}
-.ig-score.r-W{background:#2e9e5b}.ig-score.r-G{background:#d39b1f}.ig-score.r-V{background:#c93b3b}
-.ig-tl h4{margin:2px 0 2px;font-size:1rem;font-weight:var(--cds-font-weight-medium)}
-.ig-tl .when{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
-.ig-badge{display:inline-block;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:middle;border:1px solid var(--color-border-line);color:var(--color-fg-muted)}
-.ig-badge.beker{border-color:#d39b1f;color:#b07e10}
-.ig-tl p{margin:4px 0 0;line-height:1.45;font-size:.95rem}
-.ig-tl li.hl .ig-note{background:var(--wa-soft);border-radius:8px;padding:6px 9px}
-.ig-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}
-.ig-chart{position:relative;min-height:240px}
-.ig-chart svg text{fill:var(--cds-text-secondary);font-size:var(--cds-font-size-caption)}
-.ig-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);box-shadow:var(--cds-shadow-popover);border-radius:6px;padding:6px 8px;font-size:var(--cds-font-size-caption);white-space:nowrap;z-index:2}
-.ig-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin:0 0 8px}
-.ig-sw{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
-.ig-callouts{display:flex;flex-direction:column;gap:12px}
-.ig-callout{border-left:4px solid var(--nl);padding:4px 0 4px 12px}
-.ig-callout b{font-family:var(--font-anthropic-serif);font-weight:400;font-size:1.8rem;display:block;line-height:1.1}
-.ig-callout span{color:var(--color-fg-muted);font-size:.95rem}
-.ig-star{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center}
-.ig-star img{width:110px;height:110px;border-radius:50%;object-fit:cover;border:4px solid var(--wa)}
-.ig-star h3{margin:0;font-family:var(--font-anthropic-serif);font-weight:400;font-size:1.5rem}
-.ig-star .rol{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);text-transform:uppercase;letter-spacing:.06em}
-.ig-nums{display:flex;gap:18px;margin:10px 0 6px;flex-wrap:wrap}
-.ig-nums div{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
-.ig-nums strong{display:block;font-family:var(--font-anthropic-serif);font-weight:400;font-size:2rem;color:var(--color-fg);line-height:1}
-.ig-star p{margin:0;line-height:1.45;font-size:.95rem}
-.ig-duo{margin-top:16px;display:flex;align-items:center;gap:14px;background:var(--wa-soft);border-radius:14px;padding:14px 18px}
-.ig-duo b{font-family:var(--font-anthropic-serif);font-weight:400;font-size:2.4rem;line-height:1;color:var(--wa)}
-.ig-duo p{margin:0;line-height:1.45}
-.ig-insights{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-.ig-ins{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:14px;padding:16px}
-.ig-ins .ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--wa-soft);color:var(--wa);font-weight:700;font-size:1.1rem;margin-bottom:10px}
-.ig-ins h3{margin:0 0 6px;font-size:1rem;font-weight:var(--cds-font-weight-medium)}
-.ig-ins p{margin:0;line-height:1.45;font-size:.93rem;color:var(--color-fg-muted)}
-.ig-pitchwrap{display:grid;grid-template-columns:minmax(280px,1.3fr) minmax(220px,1fr);gap:16px;align-items:start}
-@media (max-width:640px){.ig-pitchwrap{grid-template-columns:1fr}.ig-star{grid-template-columns:80px 1fr}.ig-star img{width:80px;height:80px}.ig-predict{grid-template-columns:1fr}}
-.ig-pitch{position:relative;border-radius:14px;background:repeating-linear-gradient(0deg,#2f7d3f 0 44px,#2a7138 44px 88px);padding:22px 10px;display:flex;flex-direction:column;gap:26px;border:3px solid #e8f1ea;color:#fff;overflow:hidden}
-.ig-pitch::before{content:'';position:absolute;left:0;right:0;top:50%;border-top:2px solid rgba(255,255,255,.55)}
-.ig-pitch::after{content:'';position:absolute;left:50%;top:50%;width:90px;height:90px;margin:-45px 0 0 -45px;border:2px solid rgba(255,255,255,.55);border-radius:50%}
-.ig-line{display:flex;justify-content:space-evenly;position:relative;z-index:1}
-.ig-pl{display:flex;flex-direction:column;align-items:center;gap:4px;width:78px;text-align:center}
-.ig-pl i{width:34px;height:34px;border-radius:50%;background:var(--nl);border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:700;font-size:.8rem}
-.ig-pl.me i{background:#fff;color:var(--nl);box-shadow:0 0 0 3px #f2c12e}
-.ig-pl span{font-size:.75rem;line-height:1.15;text-shadow:0 1px 2px rgba(0,0,0,.6)}
-.ig-pl em{font-style:normal;font-size:.64rem;background:rgba(0,0,0,.35);padding:1px 5px;border-radius:4px}
-.ig-bench ul{list-style:none;margin:6px 0 14px;padding:0;display:flex;flex-direction:column;gap:6px}
-.ig-bench li{display:flex;gap:8px;align-items:center}
-.ig-bench li::before{content:'?';width:22px;height:22px;border-radius:50%;background:#d39b1f;color:#fff;font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
-.ig-plan{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;counter-reset:plan}
-.ig-step{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:14px;padding:16px;counter-increment:plan}
-.ig-step::before{content:counter(plan);display:flex;width:34px;height:34px;border-radius:50%;background:var(--nl);color:#fff;font-weight:700;align-items:center;justify-content:center;margin-bottom:10px}
-.ig-step h3{margin:0 0 6px;font-size:1rem;font-weight:var(--cds-font-weight-medium)}
-.ig-step p{margin:0;font-size:.93rem;line-height:1.45;color:var(--color-fg-muted)}
-.ig-scroll{overflow-x:auto}
-.ig table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
-.ig th{text-align:left;font-weight:var(--cds-font-weight-medium);color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);padding:6px 8px;border-bottom:1px solid var(--color-border-line);white-space:nowrap}
-.ig td{padding:6px 8px;border-bottom:1px solid var(--color-border-line);vertical-align:top}
-.ig td.n,.ig th.n{text-align:right}
-.ig tr.hl-w td{background:var(--wa-soft);font-weight:600}
-.ig tr.hl-n td{background:var(--nl-soft);font-weight:600}
-.ig details summary{cursor:pointer;font-weight:var(--cds-font-weight-medium)}
-.ig details[open] summary{margin-bottom:10px}
-.ig-res{display:inline-block;width:22px;text-align:center;border-radius:4px;color:#fff;font-size:var(--cds-font-size-caption)}
-.ig-res.r-W{background:#2e9e5b}.ig-res.r-G{background:#d39b1f}.ig-res.r-V{background:#c93b3b}
-</style>
-<style>
-.ig{--muted:rgba(232,238,255,.68);--line:rgba(255,255,255,.14);position:relative;isolation:isolate;padding:30px 22px 40px;border-radius:34px;color:#f4f6fb;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Helvetica Neue',var(--font-anthropic-sans),sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden;
-background:radial-gradient(55% 40% at 8% 2%,rgba(214,52,44,.62),transparent 70%),radial-gradient(50% 40% at 96% 10%,rgba(47,95,208,.66),transparent 70%),radial-gradient(45% 30% at 20% 48%,rgba(214,52,44,.30),transparent 70%),radial-gradient(50% 32% at 88% 60%,rgba(47,95,208,.38),transparent 70%),radial-gradient(45% 28% at 35% 92%,rgba(120,60,200,.28),transparent 70%),linear-gradient(165deg,#0b1022 0%,#121935 45%,#0a0e1c 100%)}
-.ig h2{font-family:inherit;font-weight:700;letter-spacing:-.025em;font-size:1.75rem}
-.ig-kicker,.ig-sub,.ig-tile p,.ig-ins p,.ig-step p,.ig-callout span,.ig-legend,.bf-label,.ig-tl .when,.ig-star .rol,.ig-nums div,.ig th,.ig details summary{color:var(--muted)}
-.ig-tile strong,.ig-nums strong{color:#fff}
-.ig-card,.ig-tile,.ig-ins,.ig-step,.ig-hero,.ig-duo,.ig-predict{position:relative;background:linear-gradient(150deg,rgba(255,255,255,.17) 0%,rgba(255,255,255,.06) 45%,rgba(255,255,255,.03) 100%);-webkit-backdrop-filter:blur(26px) saturate(180%);backdrop-filter:blur(26px) saturate(180%);border:1px solid rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -1px 0 rgba(255,255,255,.06),inset 1px 0 0 rgba(255,255,255,.08),0 18px 40px -12px rgba(0,0,0,.45);border-radius:26px;color:#f4f6fb}
-.ig-card::after,.ig-tile::after,.ig-ins::after,.ig-step::after,.ig-hero::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.14),transparent 38%)}
-.ig-hero{padding:30px 22px;border-radius:32px;overflow:hidden;background:linear-gradient(150deg,rgba(255,255,255,.2),rgba(255,255,255,.05) 55%,rgba(255,255,255,.08))}
-.ig-wm{position:absolute;pointer-events:none;opacity:.16;filter:saturate(1.2) blur(.5px);z-index:0}
-.ig-wm.l{left:-70px;top:30px;width:330px;transform:rotate(-12deg)}
-.ig-wm.r{right:-40px;top:10px;width:230px;transform:rotate(10deg)}
-.ig-hero>*:not(.ig-wm){position:relative;z-index:1}
-.ig-logo{width:112px;height:112px;margin:0 auto 12px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.98),rgba(255,255,255,.82));border:1px solid rgba(255,255,255,.7);box-shadow:inset 0 -6px 14px rgba(0,0,0,.08),0 12px 30px -8px rgba(0,0,0,.55),0 0 0 6px rgba(255,255,255,.08)}
-.ig-logo img{max-width:78%;max-height:78%;object-fit:contain}
-.ig-team h3{font-family:inherit;font-weight:700;letter-spacing:-.03em}
-.ig-team .ig-tag,.ig-badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#f4f6fb}
-.ig-vsmid{font-family:inherit;font-weight:200;letter-spacing:.1em;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
-.ig-predict{border-radius:22px;background:rgba(255,255,255,.08)}
-.ig-predict .big{font-family:inherit;font-weight:700;letter-spacing:-.04em}
-.ig-odds{border-radius:999px;height:32px;box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
-.ig-odds div:nth-child(1){background:linear-gradient(180deg,#ef5a50,#c4271f)!important}
-.ig-odds div:nth-child(2){background:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,.18))!important}
-.ig-odds div:nth-child(3){background:linear-gradient(180deg,#5a86f0,#2a54c2)!important}
-.ig-pip{border-radius:50%;box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 3px 8px rgba(0,0,0,.3)}
-.ig-lead{color:#f4f6fb;font-size:1.2rem;font-weight:400;letter-spacing:-.01em}
-.ig-tile{padding:18px 18px 16px}
-.ig-tile::before{left:16px;top:16px;bottom:auto;width:26px;height:4px;border-radius:4px;background:linear-gradient(90deg,#ff6b60,#d6342c);box-shadow:0 0 12px rgba(214,52,44,.8)}
-.ig-tile.good::before{background:linear-gradient(90deg,#7aa2ff,#2f5fd0);box-shadow:0 0 12px rgba(47,95,208,.9)}
-.ig-tile .n{font-family:inherit;font-weight:700;letter-spacing:-.04em;margin-top:14px}
-.ig-tile .n small{color:var(--muted);font-weight:500}
-.ig-bfhead span{display:flex;align-items:center;gap:8px}
-.ig-bfhead span:first-child{justify-content:flex-end;color:#ff8a82}.ig-bfhead span:last-child{color:#8fb0ff}
-.ig-bfhead img{height:24px;width:auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.4))}
-.bf-bar{height:14px;border-radius:999px}
-.bf-side.l .bf-bar{background:rgba(214,52,44,.3)}.bf-side.r .bf-bar{background:rgba(47,95,208,.32)}
-.bf-side.l.win .bf-bar{background:linear-gradient(270deg,#ff6b60,#c4271f);box-shadow:0 0 14px rgba(214,52,44,.6)}
-.bf-side.r.win .bf-bar{background:linear-gradient(90deg,#7aa2ff,#2a54c2);box-shadow:0 0 14px rgba(47,95,208,.7)}
-.ig-tl::before{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.3),rgba(255,255,255,.05))}
-.ig-score{border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 6px 16px rgba(0,0,0,.35)}
-.ig-score.r-W{background:linear-gradient(160deg,#4cc47e,#22804a)}.ig-score.r-G{background:linear-gradient(160deg,#f0bb45,#b88112)}.ig-score.r-V{background:linear-gradient(160deg,#ec5d5d,#a92a2a)}
-.ig-badge.beker{border-color:rgba(240,187,69,.6);color:#f6cf74}
-.ig-tl li.hl .ig-note{background:rgba(214,52,44,.18);border:1px solid rgba(214,52,44,.35);border-radius:14px;padding:8px 11px}
-.ig-chart svg text{fill:rgba(232,238,255,.72)}
-.ig-tip{background:rgba(20,26,50,.75);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.22);color:#fff;border-radius:12px}
-.ig-callout{border-left-width:3px}
-.ig-callout b{font-family:inherit;font-weight:700;letter-spacing:-.03em}
-.ig-star img{border:3px solid rgba(255,255,255,.6);box-shadow:0 0 0 5px rgba(214,52,44,.55),0 12px 26px rgba(0,0,0,.45)}
-.ig-star h3,.ig-nums strong,.ig-duo b{font-family:inherit;font-weight:700;letter-spacing:-.03em}
-.ig-duo{background:linear-gradient(150deg,rgba(214,52,44,.32),rgba(214,52,44,.1));border-color:rgba(255,140,130,.35)}
-.ig-duo b{color:#fff}
-.ig-ins .ico{border-radius:14px;background:linear-gradient(160deg,rgba(255,255,255,.28),rgba(255,255,255,.08));border:1px solid rgba(255,255,255,.3);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
-.ig-step::before{background:linear-gradient(160deg,#7aa2ff,#2a54c2);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 6px 14px rgba(47,95,208,.5)}
-.ig th,.ig td{border-bottom-color:var(--line)}
-.ig tr.hl-w td{background:rgba(214,52,44,.22)}
-.ig tr.hl-n td{background:rgba(47,95,208,.28)}
-.ig-sw{border-radius:50%}
-</style>
-<style>
-.ig{--muted:rgba(28,34,56,.62);--line:rgba(20,30,70,.1);color:#161a26;background:radial-gradient(50% 38% at 6% 0%,rgba(214,52,44,.20),transparent 70%),radial-gradient(48% 38% at 98% 8%,rgba(47,95,208,.22),transparent 70%),radial-gradient(42% 28% at 18% 50%,rgba(214,52,44,.10),transparent 70%),radial-gradient(46% 30% at 90% 62%,rgba(47,95,208,.13),transparent 70%),radial-gradient(40% 26% at 40% 95%,rgba(140,90,220,.10),transparent 70%),linear-gradient(170deg,#ffffff 0%,#f5f6fb 50%,#eef1f8 100%)}
-.ig-card,.ig-tile,.ig-ins,.ig-step,.ig-hero,.ig-duo,.ig-predict{background:linear-gradient(150deg,rgba(255,255,255,.82) 0%,rgba(255,255,255,.55) 55%,rgba(255,255,255,.62) 100%);border:1px solid rgba(255,255,255,.95);box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(20,30,70,.04),0 1px 2px rgba(20,30,70,.06),0 16px 36px -14px rgba(30,45,100,.28);color:#161a26}
-.ig-card::after,.ig-tile::after,.ig-ins::after,.ig-step::after,.ig-hero::after{background:linear-gradient(180deg,rgba(255,255,255,.7),transparent 30%);opacity:.5}
-.ig-hero{background:linear-gradient(150deg,rgba(255,255,255,.75),rgba(255,255,255,.45) 55%,rgba(255,255,255,.6));color:#161a26}
-.ig-meta{opacity:1;color:var(--muted)}
-.ig-wm{opacity:.09}
-.ig-logo{background:radial-gradient(circle at 30% 25%,#fff,rgba(255,255,255,.9));border:1px solid rgba(20,30,70,.08);box-shadow:inset 0 -6px 14px rgba(20,30,70,.05),0 14px 30px -10px rgba(30,45,100,.35),0 0 0 6px rgba(255,255,255,.7)}
-.ig-team .ig-tag,.ig-badge,.ig-vsmid{background:rgba(255,255,255,.7);border:1px solid rgba(20,30,70,.1);color:#161a26;box-shadow:inset 0 1px 0 #fff}
-.ig-predict{background:rgba(255,255,255,.55)}
-.ig-predict small,.ig-oddslab{opacity:1;color:var(--muted)}
-.ig-odds div:nth-child(2){background:linear-gradient(180deg,#a7adbd,#7d8496)!important}
-.ig-lead{color:#161a26}
-.ig-tile strong,.ig-nums strong,.ig-duo b{color:#161a26}
-.ig-bfhead span:first-child{color:#c4271f}.ig-bfhead span:last-child{color:#2a54c2}
-.ig-bfhead img{filter:drop-shadow(0 2px 4px rgba(30,45,100,.2))}
-.bf-side.l .bf-bar{background:rgba(214,52,44,.16)}.bf-side.r .bf-bar{background:rgba(47,95,208,.16)}
-.bf-side.l.win .bf-bar{box-shadow:0 4px 12px rgba(214,52,44,.35)}.bf-side.r.win .bf-bar{box-shadow:0 4px 12px rgba(47,95,208,.35)}
-.ig-tl::before{background:linear-gradient(180deg,rgba(20,30,70,.04),rgba(20,30,70,.16),rgba(20,30,70,.04))}
-.ig-score{border:2px solid #fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 6px 14px rgba(30,45,100,.25)}
-.ig-badge.beker{border-color:rgba(200,140,20,.45);color:#9a6a06}
-.ig-tl li.hl .ig-note{background:rgba(214,52,44,.08);border-color:rgba(214,52,44,.25)}
-.ig-chart svg text{fill:rgba(28,34,56,.7)}
-.ig-tip{background:rgba(255,255,255,.85);border:1px solid rgba(20,30,70,.1);color:#161a26;box-shadow:0 10px 24px rgba(30,45,100,.2)}
-.ig-duo{background:linear-gradient(150deg,rgba(255,235,233,.9),rgba(255,255,255,.6));border-color:rgba(214,52,44,.2)}
-.ig-duo b{color:#c4271f}
-.ig-ins .ico{background:linear-gradient(160deg,#fff,rgba(255,255,255,.6));border:1px solid rgba(20,30,70,.08);color:#c4271f;box-shadow:inset 0 1px 0 #fff,0 4px 10px rgba(30,45,100,.12)}
-.ig tr.hl-w td{background:rgba(214,52,44,.1)}
-.ig tr.hl-n td{background:rgba(47,95,208,.12)}
-.ig-callout b span{font-size:inherit;color:inherit}
-.ig-initials{width:110px;height:110px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:2rem;letter-spacing:-.02em;color:#fff;background:linear-gradient(160deg,#ef5a50,#a92a2a);border:3px solid #fff;box-shadow:0 0 0 4px rgba(214,52,44,.5),0 12px 26px rgba(30,45,100,.25)}
-@media (max-width:640px){.ig-initials{width:80px;height:80px;font-size:1.5rem}}
-</style>
+<main class="app">
 
-<div class='ig'>
+<header class="head glass">
+  <div class="badge"><img src="assets/logos/nieuwland.png" alt="Logo ASC Nieuwland"></div>
+  <div>
+    <p class="kicker">Wedstrijdanalyses · 5e klasse 10</p>
+    <h1>ASC Nieuwland 3</h1>
+    <div class="form" id="vorm"></div>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
 
-<section id='wedstrijd' class='ig-hero'>
-<img class='ig-wm l' src='assets/wasmeer-logo.png' alt=''><img class='ig-wm r' src='assets/nieuwland-logo.png' alt=''>
-<div class='ig-meta'><span>Zaterdag 28 november · 15:30</span><span>Sportpark Anna's Hoeve · veld 4</span><span>5e klasse 10 · nr. 11571</span></div>
-<div class='ig-vs'>
-<div class='ig-team'><div class='ig-logo'><img src='assets/wasmeer-logo.png' alt='Logo HSV Wasmeer'></div><h3>Wasmeer 2</h3><span class='ig-tag'><span data-draw='val' data-source='stand' data-where='team=Wasmeer 2' data-field='positie'>—</span>e · <span data-draw='val' data-source='stand' data-where='team=Wasmeer 2' data-field='p'>—</span> punten</span><div class='ig-form' data-draw='form' data-team='wasmeer_wedstrijden' data-source='wasmeer_wedstrijden'></div></div>
-<div class='ig-vsmid'>vs</div>
-<div class='ig-team'><div class='ig-logo'><img src='assets/nieuwland-logo.png' alt='Logo ASC Nieuwland'></div><h3>Nieuwland 3</h3><span class='ig-tag'><span data-draw='val' data-source='stand' data-where='team=Nieuwland ASC 3' data-field='positie'>—</span>e · <span data-draw='val' data-source='stand' data-where='team=Nieuwland ASC 3' data-field='p'>—</span> punten</span><div class='ig-form' data-draw='form' data-team='nieuwland_wedstrijden' data-source='nieuwland_wedstrijden'></div></div>
-</div>
-<div class='ig-predict'>
-<div><small>Verwachting</small><span class='big'>2 – 3</span></div>
-<div><small>Inschatting, geen rekenmodel</small><div class='ig-odds'><div style='width:35%;background:#d6342c'>35%</div><div style='width:25%;background:#8a8a8a'>25%</div><div style='width:40%;background:#2f5fd0'>40%</div></div><div class='ig-oddslab'><span>Wasmeer</span><span>Gelijk</span><span>Nieuwland</span></div></div>
-</div>
-<div class='ig-meta' style='margin-top:16px'><span>Kleedkamer Nieuwland: 04a</span><span>Kleedkamer Wasmeer: 03a</span></div>
+<section>
+  <p class="kicker">Volgende wedstrijd</p>
+  <a class="next glass" id="volgende" href="wasmeer/"></a>
 </section>
 
-<p class='ig-lead' data-read lang='nl'>Wasmeer is thuis ongeslagen en scoort in elk duel, maar hield in <b data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='wedstrijden'>—</b> competitieduels <b data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='clean_sheets'>—</b> keer de nul. Alles draait om het duo Laurens en Victor. Toen die op vakantie waren, verloor Wasmeer bij NVC. Nieuwland pakte tegen dezelfde drie tegenstanders <b data-draw='val' data-source='gemeenschappelijk' data-where='tegenstander=Totaal' data-field='nieuwland_punten'>—</b> punten, Wasmeer <b data-draw='val' data-source='gemeenschappelijk' data-where='tegenstander=Totaal' data-field='wasmeer_punten'>—</b>.</p>
-
-<section id='cijfers'>
-<p class='ig-kicker'>Wasmeer in cijfers · competitie</p>
-<h2>Waar ze sterk zijn, en waar ze lekken</h2>
-<p class='ig-sub'>Rood is een sterk punt van Wasmeer, blauw een kans voor Nieuwland.</p>
-<div class='ig-tiles'>
-<div class='ig-tile'><span class='n'><span data-draw='val' data-source='wasmeer_splits' data-where='split=Thuis' data-field='w'>—</span><small>W</small> <span data-draw='val' data-source='wasmeer_splits' data-where='split=Thuis' data-field='gl'>—</span><small>G</small> <span data-draw='val' data-source='wasmeer_splits' data-where='split=Thuis' data-field='v'>—</span><small>V</small></span><p><strong>Thuis ongeslagen.</strong> Doelsaldo <span data-draw='val' data-source='wasmeer_splits' data-where='split=Thuis' data-field='voor'>—</span>–<span data-draw='val' data-source='wasmeer_splits' data-where='split=Thuis' data-field='tegen'>—</span>.</p></div>
-<div class='ig-tile'><span class='n' data-draw='val' data-source='wasmeer_splits' data-where='split=Totaal' data-field='voor_pw'>—</span><p><strong>Goals per duel.</strong> Wasmeer scoorde in elk competitieduel.</p></div>
-<div class='ig-tile good'><span class='n' data-draw='val' data-source='wasmeer_splits' data-where='split=Totaal' data-field='tegen_pw'>—</span><p><strong>Tegengoals per duel.</strong> De nul hielden ze nog nooit.</p></div>
-<div class='ig-tile good'><span class='n'><span data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='tegen_eerst'>—</span><small>/<span data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='wedstrijden'>—</span></small></span><p><strong>Keer als eerste achter.</strong> In <span data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='tegen_vroeg'>—</span> duels al binnen 15 minuten.</p></div>
-<div class='ig-tile good'><span class='n' data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='tegen_na75'>—</span><p><strong>Tegengoals na minuut 75.</strong> Bij Sporting ging een 5-2 voorsprong nog verloren.</p></div>
-<div class='ig-tile'><span class='n'><span data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='voor_2e_helft'>—</span><small>/<span data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='voor_totaal'>—</span></small></span><p><strong>Goals na rust.</strong> Na een achterstand haalden ze nog <span data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='pts_na_achterstand'>—</span> punten.</p></div>
-</div>
+<section>
+  <p class="kicker">Tegenstanders</p>
+  <h2 style="font-size:1.75rem;font-weight:700">Alle analyses</h2>
+  <p class="sub">Klik op een tegenstander met een analyse. De andere analyses volgen voor de wedstrijd.</p>
+  <div class="filters" role="group" aria-label="Filter">
+    <button class="chip" data-f="alle" aria-pressed="true">Alle</button>
+    <button class="chip" data-f="klaar" aria-pressed="false">Analyse klaar</button>
+    <button class="chip" data-f="volgt" aria-pressed="false">Nog te spelen</button>
+    <button class="chip" data-f="gespeeld" aria-pressed="false">Gespeeld</button>
+  </div>
+  <div class="grid" id="tegels" style="margin-top:16px"></div>
 </section>
 
-<section id='vergelijking' class='ig-card'>
-<p class='ig-kicker'>Onderling vergeleken</p>
-<h2>Wasmeer 2 tegen Nieuwland 3</h2>
-<p class='ig-sub'>De volle balk is de betere waarde. Competitie, zonder beker.</p>
-<div class='ig-bfhead'><span>Wasmeer 2<img src='assets/wasmeer-logo.png' alt=''></span><span></span><span><img src='assets/nieuwland-logo.png' alt=''>Nieuwland 3</span></div>
-<div class='ig-bf' data-draw='butterfly' data-source='vergelijking'></div>
-</section>
-
-<section id='seizoen'>
-<p class='ig-kicker'>Tijdlijn · uit de Instagram-posts van Wasmeer</p>
-<h2>Het seizoen van Wasmeer tot nu toe</h2>
-<p class='ig-sub'>Alle duels, ook de beker. Onder elke uitslag staat wat het team er zelf over schreef. De bekerpoule won Wasmeer met <b data-draw='val' data-source='beker_poule' data-row='0' data-field='voor'>—</b>–<b data-draw='val' data-source='beker_poule' data-row='0' data-field='tegen'>—</b> in <span data-draw='val' data-source='beker_poule' data-row='0' data-field='g'>—</span> duels.</p>
-<div class='ig-card'><ol class='ig-tl' data-draw='tijdlijn' data-source='wasmeer_wedstrijden'></ol></div>
-</section>
-
-<section id='goalmomenten'>
-<p class='ig-kicker'>Wanneer vallen de goals?</p>
-<h2>Rustig beginnen, sterk na rust, lek in het slot</h2>
-<div class='ig-two'>
-<div class='ig-card'>
-<div class='ig-legend'><span><i class='ig-sw' style='background:#d6342c'></i>Gescoord door Wasmeer</span><span><i class='ig-sw' style='background:#2f5fd0'></i>Tegengoals Wasmeer (jullie kans)</span></div>
-<div class='ig-chart' id='kwartieren' data-draw='timing' data-source='wasmeer_goalmomenten'></div>
-</div>
-<div class='ig-card ig-callouts'>
-<div class='ig-callout'><b><span data-draw='val' data-source='wasmeer_goalmomenten' data-where='periode=0-15' data-field='tegen'>—</span> tegengoals</b><span>in het eerste kwartier. Begin fel, Wasmeer start traag.</span></div>
-<div class='ig-callout' style='border-color:#d6342c'><b><span data-draw='val' data-source='wasmeer_goalmomenten' data-where='periode=46-60' data-field='voor'>—</span> + <span data-draw='val' data-source='wasmeer_goalmomenten' data-where='periode=61-75' data-field='voor'>—</span> goals</b><span>tussen minuut 46 en 75. Hun sterkste fase: let dan extra goed op.</span></div>
-<div class='ig-callout'><b><span data-draw='val' data-source='wasmeer_goalmomenten' data-where='periode=76-90+' data-field='tegen'>—</span> tegengoals</b><span>na minuut 75. Druk blijven zetten tot het laatste fluitsignaal.</span></div>
-</div>
-</div>
-</section>
-
-<section id='sleutelspelers'>
-<p class='ig-kicker'>Sleutelspelers</p>
-<h2>Stop Laurens en Victor, stop Wasmeer</h2>
-<div class='ig-two'>
-<div class='ig-card ig-star'><div class='ig-initials'>LP</div><div><span class='rol'>#5 · aanvoerder · middenveld/aanval</span><h3>Laurens de Paauw</h3><div class='ig-nums'><div><strong data-draw='val' data-source='seizoen_spelers' data-where='speler=Laurens' data-field='goals'>—</strong>goals seizoen</div><div><strong data-draw='val' data-source='seizoen_spelers' data-where='speler=Laurens' data-field='assists'>—</strong>assists</div><div><strong data-draw='val' data-source='wasmeer_spelers' data-where='speler=Laurens' data-field='goals'>—</strong>goals competitie</div></div><p data-read lang='nl'>Maker én afmaker. Scoort ook als invaller en maakte in de beker een hattrick tegen Victoria. Geef hem een vaste schaduw op het middenveld.</p></div></div>
-<div class='ig-card ig-star'><div class='ig-initials'>VL</div><div><span class='rol'>#7 · aanval</span><h3>Victor van Loenen</h3><div class='ig-nums'><div><strong data-draw='val' data-source='seizoen_spelers' data-where='speler=Victor' data-field='goals'>—</strong>goals seizoen</div><div><strong data-draw='val' data-source='seizoen_spelers' data-where='speler=Victor' data-field='assists'>—</strong>assists</div><div><strong data-draw='val' data-source='wasmeer_spelers' data-where='speler=Victor' data-field='goals'>—</strong>goals competitie</div></div><p data-read lang='nl'>Maakte de enige goal bij Spakenburg en in de beker bij Eemboys. Gaat diep op de pass van Laurens, dus houd de ruimte achter je verdediging klein.</p></div></div>
-</div>
-<div class='ig-duo'><b data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='laurens_victor'>—</b><p data-read lang='nl'>keer gaf de een de assist op de ander in de competitie. Samen maakten ze <strong data-draw='val' data-source='wasmeer_patronen' data-row='0' data-field='laurens_victor_aandeel'>—</strong>% van de competitiegoals. Zonder hen (bij NVC) kwamen er alleen goals van Markwin en een eigen doelpunt.</p></div>
-<div class='ig-card' style='margin-top:16px'>
-<h3 style='margin:0 0 6px;font-weight:var(--cds-font-weight-medium)'>Betrokken bij doelpunten, hele seizoen</h3>
-<div class='ig-legend'><span><i class='ig-sw' style='background:#d6342c'></i>Goals</span><span><i class='ig-sw' style='background:#ec9a94'></i>Assists</span></div>
-<div class='ig-chart' id='betrokkenheid' data-draw='spelerschart' data-source='seizoen_spelers'></div>
-</div>
-</section>
-
-<section id='instagram'>
-<p class='ig-kicker'>Uit de captions</p>
-<h2>Wat Wasmeer zelf over zichzelf zegt</h2>
-<div class='ig-insights'>
-<div class='ig-ins'><div class='ico'>✈</div><h3>Zonder de vakantiegangers geen punten</h3><p data-read lang='nl'>Bij NVC waren Laurens en Victor op vakantie, en Wasmeer verloor in de slotminuten. Bij hun terugkeer maakten ze allebei een hattrick tegen Loosdrecht.</p></div>
-<div class='ig-ins'><div class='ico'>4</div><h3>Veld 4 is hun veld</h3><p data-read lang='nl'>Zaterdag wordt er op veld 4 gespeeld. Daar won Wasmeer met 7-1 van Loosdrecht, volgens de caption in de blubber. Dat klinkt als natuurgras: neem schroefnoppen mee als het regent.</p></div>
-<div class='ig-ins'><div class='ico'>⏱</div><h3>Vechtersmentaliteit in de slotfase</h3><p data-read lang='nl'>Ze roemen hun strijd in de laatste minuten tegen Altius en Spakenburg. Toch vallen daar ook de tegengoals. Ze gaan vol voor de winst, en dat geeft ruimte achterin.</p></div>
-<div class='ig-ins'><div class='ico'>!</div><h3>Snel geïrriteerd door de scheids</h3><p data-read lang='nl'>Na de 5-5 bij Sporting was de toon zuur over de verlenging van de scheidsrechter. Blijf zelf rustig in de duels; frustratie bij hen is jullie voordeel.</p></div>
-<div class='ig-ins'><div class='ico'>⇄</div><h3>Wisselende bezetting</h3><p data-read lang='nl'>De ene week een fitte bank, de andere week (bij EDO) maar anderhalve wissel. Er speelden ruim twintig namen mee en de keepers Jesse en Joppe wisselen elkaar af.</p></div>
-<div class='ig-ins'><div class='ico'>★</div><h3>Zelfvertrouwen thuis</h3><p data-read lang='nl'>Na de 4-1 tegen Huizen op Anna's Hoeve schreven ze dat ze niet voor een gelijkspel kwamen. Thuis spelen ze aanvallend en met bravoure.</p></div>
-</div>
-</section>
-
-<section id='gameplan'>
-<p class='ig-kicker'>Zo pakken we ze</p>
-<h2>Gameplan</h2>
-<div class='ig-plan'>
-<div class='ig-step'><h3>Knal erin</h3><p>Wasmeer komt vaak vroeg achter. Zet de eerste vijftien minuten hoog druk.</p></div>
-<div class='ig-step'><h3>Knip de lijn door</h3><p>Een vaste man op Laurens, een verdediger voor Victor. Die twee maken het grootste deel van hun goals.</p></div>
-<div class='ig-step'><h3>Scherp na rust</h3><p>Tussen minuut 46 en 75 zijn ze het gevaarlijkst. Een voorsprong is tegen hen nooit veilig.</p></div>
-<div class='ig-step'><h3>Beslis het in het slot</h3><p>Ze lekken na minuut 75. Verdeel je krachten en houd frisse benen achter de hand.</p></div>
-<div class='ig-step'><h3>Hoofd koel</h3><p>Wasmeer raakt geïrriteerd door de scheids. Blijf zelf rustig en speel er gebruik van.</p></div>
-</div>
-</section>
-
-<section id='stand'>
-<p class='ig-kicker'>De ranglijst</p>
-<h2>Stand 5e klasse 10</h2>
-<p class='ig-sub'>Gelijk in punten, maar Nieuwland heeft twee duels minder gespeeld en de helft minder verliespunten.</p>
-<div class='ig-card ig-scroll'><table data-source='stand' data-row-key='team'><thead><tr><th data-field='positie'>#</th><th data-field='team'>Team</th><th class='n' data-field='g'>G</th><th class='n' data-field='w'>W</th><th class='n' data-field='gl'>GL</th><th class='n' data-field='v'>V</th><th class='n' data-field='p'>P</th><th class='n' data-field='voor'>+</th><th class='n' data-field='tegen'>−</th></tr></thead><tbody data-draw='standtabel'></tbody></table></div>
-</section>
-
-<details class='ig-card' id='details'><summary>Alle uitslagen en spelersstatistieken</summary>
-<div class='ig-two'>
-<div class='ig-scroll'><h3>Wasmeer 2</h3><table data-source='wasmeer_wedstrijden' data-row-key='id'><thead><tr><th data-field='datum'>Datum</th><th data-field='tegenstander'>Tegenstander</th><th data-field='competitie'>Comp.</th><th data-field='locatie'>T/U</th><th class='n' data-field='voor'>V</th><th class='n' data-field='tegen'>T</th><th></th></tr></thead><tbody data-draw='wtabel'></tbody></table></div>
-<div class='ig-scroll'><h3>Nieuwland ASC 3</h3><table data-source='nieuwland_wedstrijden' data-row-key='id'><thead><tr><th data-field='datum'>Datum</th><th data-field='tegenstander'>Tegenstander</th><th data-field='locatie'>T/U</th><th class='n' data-field='voor'>V</th><th class='n' data-field='tegen'>T</th><th></th></tr></thead><tbody data-draw='ntabel'></tbody></table></div>
-</div>
-<h3>Spelers Wasmeer 2 · competitie</h3>
-<div class='ig-scroll'><table data-source='wasmeer_spelers' data-row-key='speler'><thead><tr><th data-field='nummer' class='n'>#</th><th data-field='speler'>Speler</th><th data-field='naam'>Naam</th><th class='n' data-field='basis'>Basis</th><th class='n' data-field='invaller'>Inval</th><th class='n' data-field='goals'>Goals</th><th class='n' data-field='assists'>Assists</th></tr></thead><tbody data-draw='stabel'></tbody></table></div>
-</details>
-
-<details class='ig-card' id='over'><summary>Over deze analyse</summary>
-<p data-read lang='nl'>Alle cijfers komen uit screenshots en Instagram-posts: het programma, de stand, de spelerslijst en de Match Result-, Starting XI-posts en captions van wasmeer_zaterdag_2. Statistieken in cijfers, vergelijking, goalmomenten en spelerstabel gaan alleen over de competitie. De tijdlijn en het seizoensoverzicht tellen de beker mee. Een eigen doelpunt van NVC telt als Wasmeer-goal zonder maker. Van de bekerpoule zijn geen opstellingen bekend. Van Nieuwland zijn alleen de uitslagen bekend. De voorspelling en kansen zijn een inschatting.</p>
-</details>
-
-</div>
+<p class="foot">Stand en uitslagen van voetbal.nl, bijgewerkt tot 25 november 2026.</p>
+</main>
 
 <script>
-function aggregeer(rows, label) {
-  let w = 0, gl = 0, voor = 0, tegen = 0;
-  rows.forEach((r) => { const a = +r.voor, b = +r.tegen; voor += a; tegen += b; if (a > b) w++; else if (a === b) gl++; });
-  const g = rows.length, p = w * 3 + gl, r2 = (x) => Math.round(x * 100) / 100;
-  return {split: label, g, w, gl, v: g - w - gl, p, voor, tegen, saldo: voor - tegen, voor_pw: g ? r2(voor / g) : null, tegen_pw: g ? r2(tegen / g) : null, ppw: g ? r2(p / g) : null};
+/* ===== Pas hier de gegevens aan =====
+   status: 'klaar'    = analyse staat online (vul map in)
+           'volgt'    = nog te spelen, analyse volgt
+           'gespeeld' = al gespeeld (vul uitslag in, Nieuwland eerst)
+   Een nieuwe analyse toevoegen: maak een map (bijv. huizen/) met een index.html,
+   zet status op 'klaar' en map op 'huizen/'. */
+const NIEUWLAND = {positie: 7, punten: 9, gespeeld: 5, voor: 13, tegen: 8, vorm: ['V', 'V', 'W', 'W', 'W']};
+
+const VOLGENDE = {
+  map: 'wasmeer/', team: 'Wasmeer 2', logo: 'assets/logos/wasmeer.png',
+  datum: 'Zaterdag 28 november · 15:30', plek: "Sportpark Anna's Hoeve, Hilversum · veld 4", thuis: false,
+  verwachting: '2 – 3'
+};
+
+const TEGENSTANDERS = [
+  {team: 'Wasmeer 2', logo: 'wasmeer.png', positie: 8, punten: 9, status: 'klaar', map: 'wasmeer/', info: 'Za 28 nov · uit'},
+  {team: 'AH’78 2', logo: 'ah78.png', positie: 1, punten: 18, status: 'gespeeld', uitslag: '0 – 4', resultaat: 'V', info: 'Uit · 26 sep'},
+  {team: 'Sporting Almere 3', logo: 'sporting-almere-3.png', positie: 2, punten: 17, status: 'volgt'},
+  {team: 'Spakenburg 4', logo: 'spakenburg.png', positie: 3, punten: 17, status: 'volgt'},
+  {team: 'Sporting Almere 4', logo: 'sporting-almere-4.png', positie: 4, punten: 15, status: 'volgt'},
+  {team: 'Forza Almere 2', logo: 'forza-almere.png', positie: 5, punten: 12, status: 'volgt'},
+  {team: 'Huizen 3', logo: 'huizen.png', positie: 6, punten: 12, status: 'volgt'},
+  {team: 'Altius 3', logo: 'altius.png', positie: 9, punten: 8, status: 'gespeeld', uitslag: '6 – 0', resultaat: 'W', info: 'Thuis · 24 okt'},
+  {team: 'Laren 99 sv 3', logo: 'laren.png', positie: 10, punten: 7, status: 'gespeeld', uitslag: '1 – 3', resultaat: 'V', info: 'Uit · 10 okt'},
+  {team: 'BVV ’31 2', logo: 'bvv31.png', positie: 11, punten: 7, status: 'volgt'},
+  {team: 'NVC 2', logo: 'nvc.png', positie: 12, punten: 6, status: 'gespeeld', uitslag: '2 – 0', resultaat: 'W', info: 'Uit · 31 okt'},
+  {team: 'Loosdrecht 4', logo: 'loosdrecht.png', positie: 13, punten: 1, status: 'gespeeld', uitslag: '4 – 1', resultaat: 'W', info: 'Thuis · 7 nov'},
+  {team: 'Victoria 3', logo: 'victoria.png', positie: 14, punten: 0, status: 'volgt'}
+];
+/* ===== Einde gegevens ===== */
+
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const badge = (src, alt) => { const b = el('div', 'badge'); const i = el('img'); i.src = src; i.alt = alt; b.append(i); return b; };
+
+// kop
+const stats = document.getElementById('stats');
+[[NIEUWLAND.positie + 'e', 'positie'], [NIEUWLAND.punten, 'punten'], [NIEUWLAND.gespeeld, 'gespeeld'], [NIEUWLAND.voor + '–' + NIEUWLAND.tegen, 'doelsaldo']].forEach(([v, l]) => { const s = el('div', 'stat'); s.append(el('b', '', v), el('span', '', l)); stats.append(s); });
+const vorm = document.getElementById('vorm');
+NIEUWLAND.vorm.forEach((r) => vorm.append(el('span', 'pip ' + r, r)));
+
+// volgende wedstrijd
+const n = document.getElementById('volgende');
+n.href = VOLGENDE.map;
+const wm = el('img', 'wm'); wm.src = VOLGENDE.logo; wm.alt = '';
+const left = el('div');
+const vs = el('div', 'vs');
+const thuis = badge('assets/logos/nieuwland.png', 'ASC Nieuwland'), uit = badge(VOLGENDE.logo, VOLGENDE.team);
+if (VOLGENDE.thuis) vs.append(thuis, el('i', '', 'vs'), uit); else vs.append(uit, el('i', '', 'vs'), thuis);
+const meta = el('div', 'meta'); meta.append(el('span', '', VOLGENDE.datum), el('span', '', VOLGENDE.plek));
+left.append(vs, el('h2', '', (VOLGENDE.thuis ? 'Nieuwland 3 – ' + VOLGENDE.team : VOLGENDE.team + ' – Nieuwland 3')), meta, el('span', 'cta', 'Bekijk analyse ›'));
+const pred = el('div', 'pred'); pred.append(el('small', '', 'Verwachting'), el('b', '', VOLGENDE.verwachting), el('small', '', 'inschatting'));
+n.append(wm, left, pred);
+
+// tegels
+const grid = document.getElementById('tegels');
+function teken(filter) {
+  const rij = TEGENSTANDERS.filter((t) => filter === 'alle' || t.status === filter);
+  const orde = {klaar: 0, volgt: 1, gespeeld: 2};
+  rij.sort((a, b) => orde[a.status] - orde[b.status] || a.positie - b.positie);
+  grid.replaceChildren(...(rij.length ? rij.map((t) => {
+    const link = t.status === 'klaar' && t.map;
+    const tile = el(link ? 'a' : 'div', 'tile glass' + (link ? '' : ' dim'));
+    if (link) tile.href = t.map;
+    tile.append(badge('assets/logos/' + t.logo, 'Logo ' + t.team), el('h3', '', t.team), el('span', 'pos', t.positie + 'e · ' + t.punten + ' punten'));
+    if (t.status === 'klaar') { tile.append(el('span', 'status s-klaar', 'Analyse klaar')); if (t.info) tile.append(el('span', 'pos', t.info)); tile.append(el('span', 'go', 'Open analyse ›')); }
+    else if (t.status === 'gespeeld') { tile.append(el('span', 'status s-gespeeld', 'Gespeeld')); const r = el('span', 'res'); r.append(el('span', 'pip ' + t.resultaat, t.resultaat), ' Nieuwland ' + t.uitslag); r.style.display = 'flex'; r.style.alignItems = 'center'; r.style.gap = '6px'; tile.append(r); if (t.info) tile.append(el('span', 'pos', t.info)); }
+    else { tile.append(el('span', 'status s-volgt', 'Analyse volgt')); }
+    return tile;
+  }) : [el('p', 'empty', 'Geen tegenstanders in deze selectie.')]));
 }
-dash.calc('wasmeer_splits', {inputs: ['wasmeer_wedstrijden'], title: 'Wasmeer 2: thuis, uit en totaal', description: 'Competitieduels van Wasmeer 2 opgeteld; de beker telt niet mee.',
-  fn: (wedstrijden) => { const c = wedstrijden.filter((r) => r.competitie === 'Competitie'); return [aggregeer(c.filter((r) => r.locatie === 'Thuis'), 'Thuis'), aggregeer(c.filter((r) => r.locatie === 'Uit'), 'Uit'), aggregeer(c, 'Totaal')]; }});
-dash.calc('nieuwland_splits', {inputs: ['nieuwland_wedstrijden'], title: 'Nieuwland ASC 3: thuis, uit en totaal', description: 'Competitieduels van Nieuwland ASC 3 opgeteld.',
-  fn: (wedstrijden) => { const c = wedstrijden.filter((r) => r.competitie === 'Competitie'); return [aggregeer(c.filter((r) => r.locatie === 'Thuis'), 'Thuis'), aggregeer(c.filter((r) => r.locatie === 'Uit'), 'Uit'), aggregeer(c, 'Totaal')]; }});
-dash.calc('beker_poule', {inputs: ['wasmeer_wedstrijden'], title: 'Wasmeer 2: bekerpoule', description: 'De drie bekerpouleduels van Wasmeer 2 opgeteld.',
-  fn: (wedstrijden) => [aggregeer(wedstrijden.filter((r) => r.ronde === 'Beker poule'), 'Beker poule')]});
-dash.calc('wasmeer_patronen', {inputs: ['wasmeer_wedstrijden', 'wasmeer_doelpunten'], title: 'Wasmeer 2: wedstrijdpatronen', description: 'Per competitieduel: wie als eerste scoorde, wanneer de goals vielen en hoe vaak beide teams scoorden.',
-  fn: (wedstrijden, doelpunten) => {
-    const c = wedstrijden.filter((r) => r.competitie === 'Competitie');
-    const ids = new Set(c.map((r) => r.id));
-    const d = doelpunten.filter((x) => ids.has(x.wedstrijd)).map((x) => ({...x, minuut: +x.minuut}));
-    let tegen_eerst = 0, pts_na_achterstand = 0, tegen_vroeg = 0;
-    c.forEach((m) => {
-      const gs = d.filter((x) => x.wedstrijd === m.id).sort((a, b) => a.minuut - b.minuut);
-      if (gs.length && gs[0].team === 'Tegenstander') { tegen_eerst++; const a = +m.voor, b = +m.tegen; pts_na_achterstand += a > b ? 3 : a === b ? 1 : 0; }
-      if (gs.some((x) => x.team === 'Tegenstander' && x.minuut <= 15)) tegen_vroeg++;
-    });
-    const voor = d.filter((x) => x.team === 'Wasmeer'), tegen = d.filter((x) => x.team === 'Tegenstander');
-    const lv = voor.filter((x) => x.speler === 'Laurens' || x.speler === 'Victor').length;
-    return [{wedstrijden: c.length, tegen_eerst, pts_na_achterstand, tegen_vroeg,
-      clean_sheets: c.filter((m) => +m.tegen === 0).length,
-      btts: c.filter((m) => +m.voor > 0 && +m.tegen > 0).length,
-      over25: c.filter((m) => +m.voor + +m.tegen > 2).length,
-      voor_totaal: voor.length, voor_2e_helft: voor.filter((x) => x.minuut > 45).length,
-      tegen_totaal: tegen.length, tegen_na75: tegen.filter((x) => x.minuut > 75).length,
-      laurens_victor: voor.filter((x) => (x.speler === 'Victor' && x.assist === 'Laurens') || (x.speler === 'Laurens' && x.assist === 'Victor')).length,
-      laurens_victor_aandeel: voor.length ? Math.round(lv / voor.length * 100) : null}];
-  }});
-dash.calc('wasmeer_spelers', {inputs: ['wasmeer_opstellingen', 'wasmeer_doelpunten', 'wasmeer_selectie', 'wasmeer_wedstrijden'], title: 'Wasmeer 2: spelers in de competitie', description: 'Basisplaatsen, invalbeurten, goals en assists per speler in de competitie.',
-  fn: (opstellingen, doelpunten, selectie, wedstrijden) => {
-    const ids = new Set(wedstrijden.filter((r) => r.competitie === 'Competitie').map((r) => r.id));
-    const m = new Map();
-    const get = (s) => { if (!m.has(s)) m.set(s, {speler: s, naam: (selectie.find((x) => x.speler === s) || {}).naam || s, nummer: null, basis: 0, invaller: 0, goals: 0, assists: 0}); return m.get(s); };
-    opstellingen.filter((r) => ids.has(r.wedstrijd)).forEach((r) => { const p = get(r.speler); p.nummer = +r.nummer; if (r.rol === 'Basis') p.basis++; else p.invaller++; });
-    doelpunten.filter((r) => ids.has(r.wedstrijd) && r.team === 'Wasmeer').forEach((r) => { if (m.has(r.speler)) get(r.speler).goals++; if (r.assist) get(r.assist).assists++; });
-    return [...m.values()].map((p) => ({...p, betrokken: p.goals + p.assists, duels: p.basis + p.invaller})).sort((a, b) => b.betrokken - a.betrokken || b.goals - a.goals || b.basis - a.basis);
-  }});
-dash.calc('seizoen_spelers', {inputs: ['wasmeer_doelpunten', 'wasmeer_selectie'], title: 'Wasmeer 2: goals en assists hele seizoen', description: 'Goals en assists per speler in alle duels, beker inbegrepen. Eigen doelpunten van tegenstanders tellen niet mee.',
-  fn: (doelpunten, selectie) => {
-    const m = new Map();
-    const get = (s) => { if (!m.has(s)) m.set(s, {speler: s, naam: (selectie.find((x) => x.speler === s) || {}).naam || s, goals: 0, assists: 0}); return m.get(s); };
-    doelpunten.filter((r) => r.team === 'Wasmeer' && r.speler && !r.speler.startsWith('Eigen')).forEach((r) => { get(r.speler).goals++; if (r.assist) get(r.assist).assists++; });
-    return [...m.values()].map((p) => ({...p, betrokken: p.goals + p.assists})).sort((a, b) => b.goals - a.goals || b.assists - a.assists);
-  }});
-dash.calc('wasmeer_goalmomenten', {inputs: ['wasmeer_wedstrijden', 'wasmeer_doelpunten'], title: 'Wasmeer 2: goals per kwartier', description: 'Doelpunten voor en tegen Wasmeer 2 in de competitie, per blok van vijftien minuten.',
-  fn: (wedstrijden, doelpunten) => {
-    const ids = new Set(wedstrijden.filter((r) => r.competitie === 'Competitie').map((r) => r.id));
-    const d = doelpunten.filter((x) => ids.has(x.wedstrijd));
-    const blokken = [['0-15', 0, 15], ['16-30', 16, 30], ['31-45', 31, 45], ['46-60', 46, 60], ['61-75', 61, 75], ['76-90+', 76, 200]];
-    return blokken.map(([periode, lo, hi]) => ({periode, voor: d.filter((x) => x.team === 'Wasmeer' && +x.minuut >= lo && +x.minuut <= hi).length, tegen: d.filter((x) => x.team === 'Tegenstander' && +x.minuut >= lo && +x.minuut <= hi).length}));
-  }});
-dash.calc('gemeenschappelijk', {inputs: ['wasmeer_wedstrijden', 'nieuwland_wedstrijden'], title: 'Gemeenschappelijke tegenstanders', description: 'Uitslagen en punten van beide teams in de competitie tegen tegenstanders die ze allebei al troffen.',
-  fn: (wasmeer, nieuwland) => {
-    const pts = (r) => (+r.voor > +r.tegen ? 3 : +r.voor === +r.tegen ? 1 : 0);
-    const rows = [];
-    wasmeer.filter((r) => r.competitie === 'Competitie').forEach((w) => {
-      const n = nieuwland.find((x) => x.tegenstander === w.tegenstander);
-      if (n) rows.push({tegenstander: w.tegenstander, wasmeer_punten: pts(w), wasmeer_voor: +w.voor, wasmeer_tegen: +w.tegen, nieuwland_punten: pts(n), nieuwland_voor: +n.voor, nieuwland_tegen: +n.tegen});
-    });
-    const s = (k) => rows.reduce((a, r) => a + r[k], 0);
-    rows.push({tegenstander: 'Totaal', wasmeer_punten: s('wasmeer_punten'), wasmeer_voor: s('wasmeer_voor'), wasmeer_tegen: s('wasmeer_tegen'), nieuwland_punten: s('nieuwland_punten'), nieuwland_voor: s('nieuwland_voor'), nieuwland_tegen: s('nieuwland_tegen')});
-    return rows;
-  }});
-dash.calc('vergelijking', {inputs: ['wasmeer_splits', 'nieuwland_splits', 'gemeenschappelijk', 'stand'], title: 'Wasmeer 2 tegen Nieuwland 3', description: 'Kerncijfers van beide teams naast elkaar, met welke waarde beter is.',
-  fn: (wasmeer_splits, nieuwland_splits, gemeenschappelijk, stand) => {
-    if (!wasmeer_splits || !nieuwland_splits || !wasmeer_splits.length || !nieuwland_splits.length) return [];
-    const w = (k) => wasmeer_splits.find((r) => r.split === k) || {}, n = (k) => nieuwland_splits.find((r) => r.split === k) || {};
-    const tot = (gemeenschappelijk || []).find((r) => r.tegenstander === 'Totaal') || {};
-    const vp = (t) => { const r = (stand || []).find((x) => x.team === t); return r ? +r.g * 3 - +r.p : null; };
-    return [
-      {maat: 'Punten per duel', wasmeer: w('Totaal').ppw, nieuwland: n('Totaal').ppw, beter: 'hoog'},
-      {maat: 'Goals voor per duel', wasmeer: w('Totaal').voor_pw, nieuwland: n('Totaal').voor_pw, beter: 'hoog'},
-      {maat: 'Goals tegen per duel', wasmeer: w('Totaal').tegen_pw, nieuwland: n('Totaal').tegen_pw, beter: 'laag'},
-      {maat: 'Verliespunten', wasmeer: vp('Wasmeer 2'), nieuwland: vp('Nieuwland ASC 3'), beter: 'laag'},
-      {maat: 'Punten tegen Altius, NVC en Loosdrecht', wasmeer: tot.wasmeer_punten, nieuwland: tot.nieuwland_punten, beter: 'hoog'},
-      {maat: 'Punten per duel: Wasmeer thuis, Nieuwland uit', wasmeer: w('Thuis').ppw, nieuwland: n('Uit').ppw, beter: 'hoog'}];
-  }});
+document.querySelectorAll('.chip').forEach((c) => c.addEventListener('click', () => {
+  document.querySelectorAll('.chip').forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+  teken(c.dataset.f);
+}));
+teken('alle');
 </script>
-
-<script>
-window.igNum = new Intl.NumberFormat('nl-NL', {maximumFractionDigits: 2});
-window.igDatum = (s) => (s ? new Date(s + 'T12:00:00').toLocaleDateString('nl-NL', {weekday: 'short', day: 'numeric', month: 'short'}) : '');
-window.igRes = (r) => (+r.voor > +r.tegen ? 'W' : +r.voor === +r.tegen ? 'G' : 'V');
-window.igEl = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
-window.igMark = (e, src, where, field) => { e.dataset.source = src; if (where) e.dataset.where = where; e.dataset.field = field; return e; };
-window.igTip = (el) => { const t = igEl('div', 'ig-tip'); t.hidden = true; el.appendChild(t); return {show(lines, ev) { t.replaceChildren(...lines.map((s, i) => igEl(i ? 'div' : 'strong', '', s))); t.hidden = false; const b = el.getBoundingClientRect(); let x = ev.clientX - b.left + 12; if (x + t.offsetWidth > b.width) x = ev.clientX - b.left - t.offsetWidth - 12; t.style.left = Math.max(0, x) + 'px'; t.style.top = Math.max(0, ev.clientY - b.top - 10) + 'px'; }, hide() { t.hidden = true; }}; };
-
-dash.draw('val', (el) => {
-  const d = dash.data(el.dataset.source);
-  if (d.status !== 'ok' || !Array.isArray(d.data)) { el.textContent = '—'; return; }
-  let row;
-  if (el.dataset.where) { const i = el.dataset.where.indexOf('='); const k = decodeURIComponent(el.dataset.where.slice(0, i)), v = decodeURIComponent(el.dataset.where.slice(i + 1)); row = d.data.find((r) => String(r[k]) === v); } else row = d.data[+(el.dataset.row || 0)];
-  const v = row ? row[el.dataset.field] : null;
-  el.textContent = v == null || v === '' ? '—' : (typeof v === 'number' ? igNum.format(v) : String(v));
-});
-
-dash.draw('form', (el) => {
-  const d = dash.data(el.dataset.team);
-  if (d.status !== 'ok') { el.replaceChildren(); return; }
-  const rows = d.data.filter((r) => r.competitie === 'Competitie').sort((a, b) => a.datum.localeCompare(b.datum)).slice(-5);
-  el.replaceChildren(...rows.map((r) => { const res = igRes(r); const p = igEl('span', 'ig-pip r-' + res, res); p.title = r.tegenstander + ' ' + r.voor + '-' + r.tegen; return p; }));
-});
-
-dash.draw('butterfly', (el) => {
-  const d = dash.data('vergelijking');
-  if (d.status !== 'ok' || !d.data) { el.replaceChildren(); if (d.status === 'error') el.textContent = 'Kon de vergelijking niet laden.'; return; }
-  el.replaceChildren(...d.data.map((r) => {
-    const row = igEl('div', 'bf-row');
-    const max = Math.max(r.wasmeer || 0, r.nieuwland || 0) || 1;
-    const better = r.wasmeer === r.nieuwland ? '' : (r.beter === 'hoog') === (r.wasmeer > r.nieuwland) ? 'w' : 'n';
-    const where = 'maat=' + r.maat.replace(/%/g, '%25').replace(/&/g, '%26').replace(/=/g, '%3D');
-    const side = (cls, key, win) => { const s = igEl('div', 'bf-side ' + cls + (win ? ' win' : '')); const v = igMark(igEl('span', 'bf-val', r[key] == null ? '—' : igNum.format(r[key])), 'vergelijking', where, key); const b = igEl('div', 'bf-bar'); b.style.width = ((r[key] || 0) / max * 100) + '%'; s.append(v, b); return s; };
-    row.append(side('l', 'wasmeer', better === 'w'), igEl('div', 'bf-label', r.maat), side('r', 'nieuwland', better === 'n'));
-    return row;
-  }));
-});
-
-dash.draw('tijdlijn', (el) => {
-  const d = dash.data('wasmeer_wedstrijden');
-  if (d.status !== 'ok') { el.replaceChildren(); if (d.status === 'error') el.textContent = 'Kon de uitslagen niet laden.'; return; }
-  const rows = [...d.data].sort((a, b) => a.datum.localeCompare(b.datum));
-  el.replaceChildren(...rows.map((r) => {
-    const li = igEl('li', r.id === 'W2' || r.id === 'W3' ? 'hl' : '');
-    const res = igRes(r);
-    const sc = igEl('div', 'ig-score r-' + res);
-    const s1 = igMark(igEl('span', '', r.voor), 'wasmeer_wedstrijden', 'id=' + r.id, 'voor'), s2 = igMark(igEl('span', '', r.tegen), 'wasmeer_wedstrijden', 'id=' + r.id, 'tegen');
-    const line = igEl('span'); line.append(s1, '-', s2); sc.append(line);
-    const body = igEl('div');
-    const when = igEl('span', 'when', igDatum(r.datum) + ' · ' + (r.locatie === 'Thuis' ? 'thuis' : 'uit'));
-    const h = igEl('h4', '', (r.locatie === 'Thuis' ? 'Wasmeer 2 – ' : '') + r.tegenstander + (r.locatie === 'Uit' ? ' – Wasmeer 2' : ''));
-    h.append(igEl('span', 'ig-badge' + (r.competitie === 'Beker' ? ' beker' : ''), r.ronde));
-    body.append(when, h, igMark(igEl('p', 'ig-note', r.instagram || ''), 'wasmeer_wedstrijden', 'id=' + r.id, 'instagram'));
-    li.append(sc, body);
-    return li;
-  }));
-});
-
-function igCell(tr, text, cls) { const td = igEl('td', cls || '', text); tr.appendChild(td); return td; }
-function igFail(tb, d, cols) { if (d.status === 'ok') return false; tb.replaceChildren(); if (d.status === 'error') { const tr = igEl('tr'); const td = igCell(tr, 'Kon deze tabel niet laden.'); td.colSpan = cols; tb.appendChild(tr); } return true; }
-
-dash.draw('standtabel', (tb) => {
-  const d = dash.data('stand'); if (igFail(tb, d, 9)) return;
-  tb.replaceChildren(...d.data.map((r) => { const tr = igEl('tr', r.team === 'Wasmeer 2' ? 'hl-w' : r.team === 'Nieuwland ASC 3' ? 'hl-n' : ''); igCell(tr, r.positie); igCell(tr, r.team); ['g', 'w', 'gl', 'v', 'p', 'voor', 'tegen'].forEach((k) => igCell(tr, r[k], 'n')); return tr; }));
-});
-
-dash.draw('stabel', (tb) => {
-  const d = dash.data('wasmeer_spelers'); if (igFail(tb, d, 7)) return;
-  tb.replaceChildren(...d.data.map((r) => { const tr = igEl('tr'); igCell(tr, r.nummer, 'n'); igCell(tr, r.speler); igCell(tr, r.naam); ['basis', 'invaller', 'goals', 'assists'].forEach((k) => igCell(tr, igNum.format(r[k]), 'n')); return tr; }));
-});
-
-dash.draw('wtabel', (tb) => {
-  const d = dash.data('wasmeer_wedstrijden'); if (igFail(tb, d, 7)) return;
-  const rows = [...d.data].sort((a, b) => a.datum.localeCompare(b.datum));
-  tb.replaceChildren(...rows.map((r) => { const tr = igEl('tr'); tr.dataset.key = r.id; igCell(tr, igDatum(r.datum)); igCell(tr, r.tegenstander); igCell(tr, r.competitie); igCell(tr, r.locatie === 'Thuis' ? 'T' : 'U'); igCell(tr, r.voor, 'n'); igCell(tr, r.tegen, 'n'); const td = igCell(tr, ''); const res = igRes(r); td.appendChild(igEl('span', 'ig-res r-' + res, res)); return tr; }));
-});
-
-dash.draw('ntabel', (tb) => {
-  const d = dash.data('nieuwland_wedstrijden'); if (igFail(tb, d, 6)) return;
-  const rows = [...d.data].sort((a, b) => a.datum.localeCompare(b.datum));
-  tb.replaceChildren(...rows.map((r) => { const tr = igEl('tr'); tr.dataset.key = r.id; igCell(tr, igDatum(r.datum)); igCell(tr, r.tegenstander); igCell(tr, r.locatie === 'Thuis' ? 'T' : 'U'); igCell(tr, r.voor, 'n'); igCell(tr, r.tegen, 'n'); const td = igCell(tr, ''); const res = igRes(r); td.appendChild(igEl('span', 'ig-res r-' + res, res)); return tr; }));
-});
-
-dash.draw('timing', (el) => {
-  const d = dash.data('wasmeer_goalmomenten');
-  if (d.status !== 'ok' || !d.data) { el.replaceChildren(); if (d.status === 'error') el.textContent = 'Kon de goalmomenten niet laden.'; return; }
-  el.replaceChildren();
-  const W = Math.max(280, el.clientWidth), H = 240, m = {t: 18, r: 6, b: 26, l: 26};
-  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', '0 0 ' + W + ' ' + H).attr('role', 'img').attr('aria-label', 'Goals voor en tegen Wasmeer 2 per kwartier');
-  const x0 = d3.scaleBand().domain(d.data.map((r) => r.periode)).range([m.l, W - m.r]).padding(0.22);
-  const x1 = d3.scaleBand().domain(['voor', 'tegen']).range([0, x0.bandwidth()]).padding(0.08);
-  const y = d3.scaleLinear().domain([0, d3.max(d.data, (r) => Math.max(r.voor, r.tegen)) || 1]).nice().range([H - m.b, m.t]);
-  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).style('stroke', 'var(--cds-chart-grid)');
-  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', y).attr('dy', '0.32em').attr('text-anchor', 'end').text((v) => v);
-  svg.append('g').selectAll('text').data(d.data).join('text').attr('x', (r) => x0(r.periode) + x0.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text((r) => r.periode);
-  const tip = igTip(el);
-  const kleur = {voor: '#d6342c', tegen: '#2f5fd0'}, namen = {voor: 'Gescoord door Wasmeer', tegen: 'Tegengoals Wasmeer'};
-  const g = svg.append('g').selectAll('g').data(d.data).join('g').attr('transform', (r) => 'translate(' + x0(r.periode) + ',0)');
-  g.selectAll('rect').data((r) => ['voor', 'tegen'].map((k) => ({k, v: r[k], p: r.periode}))).join('rect').attr('x', (o) => x1(o.k)).attr('width', x1.bandwidth()).attr('y', (o) => y(o.v)).attr('height', (o) => y(0) - y(o.v)).attr('rx', 3).style('fill', (o) => kleur[o.k])
-    .on('pointermove', (ev, o) => tip.show(['Minuut ' + o.p, namen[o.k] + ': ' + o.v], ev)).on('pointerleave', () => tip.hide());
-  g.selectAll('text').data((r) => ['voor', 'tegen'].map((k) => ({k, v: r[k]}))).join('text').attr('x', (o) => x1(o.k) + x1.bandwidth() / 2).attr('y', (o) => y(o.v) - 4).attr('text-anchor', 'middle').text((o) => (o.v ? o.v : ''));
-});
-
-dash.draw('spelerschart', (el) => {
-  const d = dash.data('seizoen_spelers');
-  if (d.status !== 'ok' || !d.data) { el.replaceChildren(); if (d.status === 'error') el.textContent = 'Kon de spelers niet laden.'; return; }
-  el.replaceChildren();
-  const rows = [...d.data].sort((a, b) => b.betrokken - a.betrokken || b.goals - a.goals).slice(0, 10);
-  const W = Math.max(280, el.clientWidth), bh = 26, m = {t: 4, r: 56, b: 4}, H = m.t + m.b + rows.length * bh;
-  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', '0 0 ' + W + ' ' + H).attr('role', 'img').attr('aria-label', 'Goals en assists per speler van Wasmeer 2, hele seizoen');
-  const labels = svg.append('g').selectAll('text').data(rows).join('text').attr('y', (r, i) => m.t + i * bh + bh / 2).attr('dy', '0.32em').text((r) => r.speler);
-  let lw = 0; labels.each(function () { lw = Math.max(lw, this.getComputedTextLength()); });
-  const l = Math.ceil(lw) + 10; labels.attr('x', l - 8).attr('text-anchor', 'end');
-  const x = d3.scaleLinear().domain([0, d3.max(rows, (r) => r.betrokken) || 1]).range([l, W - m.r]);
-  const tip = igTip(el);
-  const g = svg.append('g').selectAll('g').data(rows).join('g').attr('transform', (r, i) => 'translate(0,' + (m.t + i * bh + 4) + ')');
-  g.append('rect').attr('x', x(0)).attr('width', (r) => x(r.goals) - x(0)).attr('height', bh - 8).attr('rx', 3).style('fill', '#d6342c');
-  g.append('rect').attr('x', (r) => x(r.goals)).attr('width', (r) => x(r.goals + r.assists) - x(r.goals)).attr('height', bh - 8).attr('rx', 3).style('fill', '#ec9a94');
-  g.append('rect').attr('x', l).attr('width', W - l).attr('height', bh - 8).style('fill', 'transparent').on('pointermove', (ev, r) => tip.show([r.naam, 'Goals: ' + r.goals, 'Assists: ' + r.assists], ev)).on('pointerleave', () => tip.hide());
-  g.append('text').attr('x', (r) => x(r.betrokken) + 5).attr('y', (bh - 8) / 2).attr('dy', '0.32em').text((r) => r.goals + ' + ' + r.assists);
-});
-</script>
-
-<script>
-dash.run();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(dash.run,200);});
-</script>
-<p class="ig-footer">Wedstrijdanalyse ASC Nieuwland 3 · gemaakt op basis van voetbal.nl en Instagram-posts van Wasmeer Zaterdag 2</p>
 </body>
 </html>
