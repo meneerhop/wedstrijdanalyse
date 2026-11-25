@@ -309,6 +309,49 @@ details.ig-card>summary{padding:14px 0}
 @media(max-width:640px){body{padding:max(env(safe-area-inset-top),8px) max(env(safe-area-inset-right),8px) max(env(safe-area-inset-bottom),8px) max(env(safe-area-inset-left),8px)}.ig-uitklap>summary{padding:11px 20px;font-size:.88rem}.ig-uitklap-inner{gap:28px}.ig-chart{min-height:180px}}
 </style>
 
+<style>
+/* Opvallende knop "Volledige analyse" */
+.ig-uitklap{margin-top:8px}
+.ig-uitklap>summary{display:block;width:100%;max-width:600px;margin:0 auto;padding:0;background:none;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;border-radius:28px;outline:none}
+.ig-uitklap>summary:hover,.ig-uitklap>summary:active{transform:none;box-shadow:none}
+.ig-uitklap>summary:focus-visible .ig-uitklap-cta{outline:3px solid #f2c12e;outline-offset:3px}
+.ig-uitklap-cta{position:relative;overflow:hidden;display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:28px;color:#fff;text-align:left;
+background:linear-gradient(160deg,#6a93f5 0%,#2f5fd0 55%,#2448a8 100%);
+box-shadow:inset 0 1px 1px rgba(255,255,255,.7),inset 0 -3px 8px rgba(0,0,0,.18),0 0 0 6px rgba(47,95,208,.14),0 22px 40px -16px rgba(42,84,194,.8);
+transition:transform .3s cubic-bezier(.2,.9,.3,1.3),box-shadow .3s ease}
+.ig-uitklap-cta::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(120% 80% at 15% 0%,rgba(255,255,255,.45),rgba(255,255,255,0) 55%)}
+.ig-uitklap>summary:hover .ig-uitklap-cta{transform:translateY(-3px) scale(1.015);box-shadow:inset 0 1px 1px rgba(255,255,255,.7),inset 0 -3px 8px rgba(0,0,0,.18),0 0 0 8px rgba(47,95,208,.18),0 28px 48px -16px rgba(42,84,194,.9)}
+.ig-uitklap>summary:active .ig-uitklap-cta{transform:scale(.98)}
+.ig-uitklap-ico{flex:none;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.22);box-shadow:inset 0 1px 1px rgba(255,255,255,.7);font-size:1.35rem;font-style:normal;position:relative}
+.ig-uitklap-txt{flex:1;display:flex;flex-direction:column;gap:4px;position:relative}
+.ig-uitklap-txt strong{font-size:1.15rem;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.ig-uitklap-txt small{font-size:.84rem;font-weight:500;opacity:.9;line-height:1.35}
+.ig-uitklap-cta .ig-uitklap-chevron{flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:#2a54c2;opacity:1;font-size:1.1rem;font-weight:700;box-shadow:0 6px 14px -6px rgba(0,0,0,.35);position:relative;transition:transform .3s}
+.ig-uitklap-tip{display:block;text-align:center;margin:12px 0 0;font-size:.82rem;font-weight:600;color:#2a54c2;letter-spacing:.01em}
+.ig-uitklap .t-open{display:none}
+.ig-uitklap[open] .t-dicht{display:none}
+.ig-uitklap[open] .t-open{display:inline}
+.ig-uitklap[open] .ig-uitklap-tip{display:none}
+.ig-uitklap[open] .ig-uitklap-cta{background:linear-gradient(160deg,rgba(255,255,255,.85),rgba(255,255,255,.6));color:#161a26;box-shadow:inset 0 1px 1px #fff,0 14px 30px -16px rgba(30,45,100,.4)}
+.ig-uitklap[open] .ig-uitklap-ico{background:rgba(47,95,208,.12);color:#2a54c2}
+.ig-uitklap[open] .ig-uitklap-cta .ig-uitklap-chevron{transform:rotate(180deg);background:#2f5fd0;color:#fff}
+@media (prefers-reduced-motion:no-preference){
+.ig-uitklap:not([open]) .ig-uitklap-chevron{animation:ig-wenk 1.8s ease-in-out infinite}
+.ig-uitklap:not([open]) .ig-uitklap-cta{animation:ig-gloed 2.6s ease-in-out infinite}
+@keyframes ig-wenk{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@keyframes ig-gloed{0%,100%{box-shadow:inset 0 1px 1px rgba(255,255,255,.7),inset 0 -3px 8px rgba(0,0,0,.18),0 0 0 6px rgba(47,95,208,.14),0 22px 40px -16px rgba(42,84,194,.8)}50%{box-shadow:inset 0 1px 1px rgba(255,255,255,.7),inset 0 -3px 8px rgba(0,0,0,.18),0 0 0 11px rgba(47,95,208,.08),0 22px 40px -16px rgba(42,84,194,.8)}}
+}
+@media (prefers-reduced-motion:reduce){.ig-uitklap-cta,.ig-uitklap-chevron{transition:none}}
+@media (max-width:640px){
+.ig-uitklap>summary{padding:0}
+.ig-uitklap-cta{gap:12px;padding:16px 16px;border-radius:24px}
+.ig-uitklap-ico{width:38px;height:38px;font-size:1.1rem}
+.ig-uitklap-txt strong{font-size:1.02rem}
+.ig-uitklap-txt small{font-size:.78rem}
+.ig-uitklap-cta .ig-uitklap-chevron{width:34px;height:34px}
+}
+</style>
+
 <div class='ig'>
 
 <section id='wedstrijd' class='ig-hero'>
@@ -356,7 +399,17 @@ details.ig-card>summary{padding:14px 0}
 </section>
 
 <details class='ig-uitklap'>
-<summary>Volledige analyse <i class='ig-uitklap-chevron'>▾</i></summary>
+<summary aria-label="Klik hier voor de volledige analyse">
+<span class='ig-uitklap-cta'>
+<i class='ig-uitklap-ico' aria-hidden='true'>📊</i>
+<span class='ig-uitklap-txt'>
+<strong><span class='t-dicht'>Bekijk de volledige analyse</span><span class='t-open'>Volledige analyse verbergen</span></strong>
+<small><span class='t-dicht'>Klik hier voor de vergelijking, tijdlijn, goalmomenten, sleutelspelers en stand</span><span class='t-open'>Klik hier om de analyse weer in te klappen</span></small>
+</span>
+<i class='ig-uitklap-chevron' aria-hidden='true'>▾</i>
+</span>
+<span class='ig-uitklap-tip'>Klik op de blauwe knop voor de volledige analyse</span>
+</summary>
 <div class='ig-uitklap-inner'>
 <section id='vergelijking' class='ig-card'>
 <p class='ig-kicker'>Onderling vergeleken</p>
@@ -650,7 +703,7 @@ dash.draw('spelerschart', (el) => {
 </script>
 
 <script>
-dash.run();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(dash.run,200);});
+dash.run();document.querySelectorAll('details').forEach(function(d){d.addEventListener('toggle',function(){if(d.open)dash.run();});});var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(dash.run,200);});
 </script>
 <p class="ig-footer">Wedstrijdanalyse ASC Nieuwland 3 · gemaakt op basis van voetbal.nl en Instagram-posts van Wasmeer Zaterdag 2</p>
 </body>
