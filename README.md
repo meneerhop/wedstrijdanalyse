@@ -7,15 +7,16 @@ Homepage met alle tegenstanders van ASC Nieuwland 3 (5e klasse 10). Elke tegenst
 ```
 index.html            ← homepage met de tegels
 wasmeer/index.html    ← analyse Wasmeer 2
-assets/logos/         ← clublogo's van alle teams in de poule
-assets/               ← spelersfoto's en d3.js (voor de grafieken)
 ```
+
+Alle logo's, foto's en de grafiekbibliotheek zitten ín de html-bestanden zelf.
+Er zijn dus geen losse afbeeldingen nodig.
 
 ## Online zetten met GitHub Pages
 
 1. Maak op github.com een nieuwe repository aan, bijvoorbeeld `nieuwland-analyses`.
 2. Klik op **Add file → Upload files** en sleep de **inhoud** van deze map erin
-   (`index.html`, `README.md`, en de mappen `assets` en `wasmeer`). Klik op **Commit changes**.
+   (`index.html`, `README.md` en de map `wasmeer`). Klik op **Commit changes**.
 3. Ga naar **Settings → Pages**. Kies bij *Source* **Deploy from a branch**,
    branch **main** en map **/(root)**, en klik op **Save**.
 4. Na een minuut staat de site op
@@ -33,4 +34,3 @@ Let op: een GitHub Pages-site is openbaar. Iedereen met de link kan hem bekijken
 5. Upload de gewijzigde bestanden opnieuw naar GitHub.
 
 Na een gespeelde wedstrijd zet je `status: 'gespeeld'` met `uitslag` (Nieuwland eerst) en `resultaat` (`'W'`, `'G'` of `'V'`).
-
